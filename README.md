@@ -1,4 +1,4 @@
-# fiap-arch-analyzer-cadastro-service
+# fiap-arch-analyzer-registration-service
 
 User and analysis management service.
 
