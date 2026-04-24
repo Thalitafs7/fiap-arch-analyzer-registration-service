@@ -1,0 +1,69 @@
+[
+  {
+    "ContainingType": "API.Controllers.AnaliseController",
+    "Method": "Criar",
+    "RelativePath": "api/analise",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.WebhookIAController",
+    "Method": "MercadoPagoWebhook",
+    "RelativePath": "api/webhooks/mercadopago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data.id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "x-signature",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "x-request-id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "payload",
+        "Type": "API.Controllers.MercadoPagoWebhookPayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

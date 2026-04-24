@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DXpzLgonejs=",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joaoa\\.nuget\\packages\\awssdk.core\\4.0.3.29\\awssdk.core.4.0.3.29.nupkg.sha512",
+    "C:\\Users\\joaoa\\.nuget\\packages\\awssdk.s3\\4.0.21.2\\awssdk.s3.4.0.21.2.nupkg.sha512"
+  ],
+  "logs": []
+}

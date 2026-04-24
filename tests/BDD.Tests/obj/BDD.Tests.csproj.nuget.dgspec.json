@@ -1,0 +1,593 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              },
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[4.0.3.33, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[4.0.2.25, )"
+            },
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "AspNetCore.HealthChecks.Rabbitmq": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "OpenTelemetry.Exporter.Console": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Formatting.Compact": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[4.0.2.25, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[4.0.21.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              },
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[4.0.3.29, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[4.0.3.33, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
+            "Hangfire.PostgreSql": {
+              "target": "Package",
+              "version": "[1.20.9, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MassTransit.AmazonSQS": {
+              "target": "Package",
+              "version": "[8.1.3, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj",
+        "projectName": "BDD.Tests",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj"
+              },
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              },
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              },
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Reqnroll": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Reqnroll.xUnit": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Testcontainers": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "Testcontainers.PostgreSql": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.6.6, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
