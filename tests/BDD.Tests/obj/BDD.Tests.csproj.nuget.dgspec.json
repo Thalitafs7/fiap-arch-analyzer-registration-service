@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj": {}
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\tests\\BDD.Tests\\BDD.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj",
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
         "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\obj\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj"
               },
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\obj\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -175,8 +175,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -246,14 +246,14 @@
         }
       }
     },
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -317,14 +317,14 @@
         }
       }
     },
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -345,11 +345,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj"
               },
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -461,14 +461,14 @@
         }
       }
     },
-    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj": {
+    "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\tests\\BDD.Tests\\BDD.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj",
+        "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\tests\\BDD.Tests\\BDD.Tests.csproj",
         "projectName": "BDD.Tests",
-        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\BDD.Tests.csproj",
+        "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\tests\\BDD.Tests\\BDD.Tests.csproj",
         "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\tests\\BDD.Tests\\obj\\",
+        "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\tests\\BDD.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -489,17 +489,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\API\\API.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj"
               },
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Application\\Application.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Application.csproj"
               },
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj"
               },
-              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

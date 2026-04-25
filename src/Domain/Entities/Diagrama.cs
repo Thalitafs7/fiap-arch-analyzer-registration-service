@@ -8,7 +8,7 @@ public class Diagrama : Entity
     public string? Nome { get; private set; }
     public string? TipoDiagrama { get; private set; }
     public string? URLS3Diagrama { get; private set; }
-    public Relatorio Relatorio { get; private set; } = default!;
+    public Relatorio? Relatorio { get; private set; } = default!;
     public Guid IdRelatorio { get; private set; } = default!;
 
 

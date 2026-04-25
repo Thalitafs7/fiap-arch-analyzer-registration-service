@@ -5,5 +5,5 @@ public record DiagramaDto(
      string? Nome,
      string? TipoDiagrama,
      string? URLS3Diagrama,
-     RelatorioDto Relatorio
+     RelatorioDto? Relatorio
  );

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+mFsLihX03U=",
+  "dgSpecHash": "ts5Fr0+U+tY=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaoa\\.nuget\\packages\\awssdk.core\\4.0.3.29\\awssdk.core.4.0.3.29.nupkg.sha512",
     "C:\\Users\\joaoa\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.3.33\\awssdk.extensions.netcore.setup.4.0.3.33.nupkg.sha512",
@@ -118,9 +118,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: AWSSDK.SimpleNotificationService 3.7.300.21 requer AWSSDK.Core (>= 3.7.300.21 && < 4.0.0), mas a versão AWSSDK.Core 4.0.3.29 foi resolvida.",
-      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+      "filePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
       "libraryId": "AWSSDK.Core",
       "targetGraphs": [
         "net9.0"
@@ -130,9 +130,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: AWSSDK.SecurityToken 3.7.100.14 requer AWSSDK.Core (>= 3.7.100.14 && < 4.0.0), mas a versão AWSSDK.Core 4.0.3.29 foi resolvida.",
-      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Infrastructure\\Infrastructure.csproj",
+      "filePath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
       "libraryId": "AWSSDK.Core",
       "targetGraphs": [
         "net9.0"

@@ -94,11 +94,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\TechChallenger-IADT-SOAT\\src\\Domain\\obj\\",
+      "outputPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

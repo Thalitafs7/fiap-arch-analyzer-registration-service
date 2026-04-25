@@ -3,7 +3,7 @@ using Domain.Entities;
 
 namespace Application.Mappings;
 
-public static class OrdemServicoMappings
+public static class AnaliseServicoMappings
 {
     public static AnaliseDto ToDto(this Analise an)
     {

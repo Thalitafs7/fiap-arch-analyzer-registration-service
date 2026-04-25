@@ -20,19 +20,9 @@ public class DiagramaConfiguration : IEntityTypeConfiguration<Diagrama>
         builder.Property(e => e.DataCadastro).HasColumnName("data_cadastro");
         builder.Property(e => e.DataAtualizacao).HasColumnName("data_atualizacao");
 
-        /*builder.HasOne(e => e.Orcamento)
-            .WithOne()
-            .HasForeignKey<Orcamento>(o => o.OrdemServicoId);
 
-        builder.HasOne(e => e.Pagamento)
+        builder.HasOne(e => e.Relatorio)
             .WithOne()
-            .HasForeignKey<Pagamento>(p => p.OrdemServicoId);
-
-        builder.HasMany(e => e.Insumos)
-            .WithOne()
-            .HasForeignKey(i => i.OrdemServicoId);
-
-        builder.HasIndex(e => e.ClienteId);
-        builder.HasIndex(e => e.Status);*/
+            .HasForeignKey<Relatorio>(o => o.IdDiagrama);
     }
 }
