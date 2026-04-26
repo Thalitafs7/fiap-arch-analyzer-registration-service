@@ -122,8 +122,7 @@
               "RelativeToolTip": "src\\Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T00:51:37.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T00:51:37.105Z"
             },
             {
               "$type": "Document",
@@ -133,7 +132,7 @@
               "RelativeDocumentMoniker": "src\\API\\Controllers\\AnaliseController.cs",
               "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\AnaliseController.cs",
               "RelativeToolTip": "src\\API\\Controllers\\AnaliseController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-26T01:48:07.094Z",
               "EditorCaption": ""
@@ -160,8 +159,7 @@
               "RelativeToolTip": "src\\API\\Program.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAAApwKAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T00:07:15.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T00:07:15.673Z"
             },
             {
               "$type": "Document",
@@ -173,8 +171,7 @@
               "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAApwFUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:48:45.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T01:48:45.985Z"
             },
             {
               "$type": "Document",
@@ -186,8 +183,7 @@
               "RelativeToolTip": "src\\Domain\\Entities\\Diagrama.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T20:11:15.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T20:11:15.315Z"
             },
             {
               "$type": "Document",
@@ -199,8 +195,7 @@
               "RelativeToolTip": "src\\Application\\Mappings\\AnaliseServicoMappings.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAIwBAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T20:10:36.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T20:10:36.833Z"
             },
             {
               "$type": "Document",
@@ -212,8 +207,7 @@
               "RelativeToolTip": "src\\Application\\DTOs\\DiagramaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T20:10:11.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T20:10:11.429Z"
             },
             {
               "$type": "Document",
@@ -237,8 +231,7 @@
               "RelativeToolTip": "src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T02:05:46.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T02:05:46.148Z"
             },
             {
               "$type": "Document",
@@ -250,8 +243,7 @@
               "RelativeToolTip": "src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T02:07:11.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T02:07:11.552Z"
             },
             {
               "$type": "Document",
@@ -263,8 +255,7 @@
               "RelativeToolTip": "src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T02:08:45.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T02:08:45.529Z"
             },
             {
               "$type": "Document",
@@ -324,8 +315,7 @@
               "RelativeToolTip": "src\\Domain\\Entities\\Error.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAqwAcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:36:45.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T01:36:45.803Z"
             },
             {
               "$type": "Document",
@@ -349,8 +339,7 @@
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260426014201_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:42:01.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-26T01:42:01.551Z"
             },
             {
               "$type": "Document",
