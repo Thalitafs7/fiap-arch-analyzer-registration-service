@@ -8,22 +8,24 @@
     ".NETCoreApp,Version=v9.0": {
       "Infrastructure/1.0.0": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29",
-          "AWSSDK.Extensions.NETCore.Setup": "4.0.3.33",
+          "AWSSDK.Core": "4.0.4",
+          "AWSSDK.Extensions.NETCore.Setup": "4.0.3.35",
+          "AWSSDK.SQS": "4.0.2.27",
+          "AWSSDK.SecurityToken": "4.0.6.2",
+          "AWSSDK.SimpleNotificationService": "4.0.2.29",
           "Application": "1.0.0",
           "Domain": "1.0.0",
-          "Hangfire.Core": "1.8.9",
           "Hangfire.PostgreSql": "1.20.9",
-          "MassTransit": "8.2.0",
-          "MassTransit.AmazonSQS": "8.1.3",
+          "MassTransit.AmazonSQS": "9.1.0",
           "MassTransit.RabbitMQ": "8.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "10.0.7",
           "Microsoft.Extensions.Http": "9.0.0",
           "Microsoft.Extensions.Http.Polly": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "MongoDB.Driver": "2.25.0",
+          "MongoDB.Driver": "3.8.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
           "Scrutor": "4.2.2",
           "SendGrid": "9.29.3"
@@ -32,17 +34,17 @@
           "Infrastructure.dll": {}
         }
       },
-      "AWSSDK.Core/4.0.3.29": {
+      "AWSSDK.Core/4.0.4": {
         "runtime": {
           "lib/net8.0/AWSSDK.Core.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.3.29"
+            "fileVersion": "4.0.4.0"
           }
         }
       },
-      "AWSSDK.Extensions.NETCore.Setup/4.0.3.33": {
+      "AWSSDK.Extensions.NETCore.Setup/4.0.3.35": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29",
+          "AWSSDK.Core": "4.0.4",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
@@ -50,13 +52,13 @@
         "runtime": {
           "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.3.33"
+            "fileVersion": "4.0.3.35"
           }
         }
       },
       "AWSSDK.S3/4.0.21.2": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29"
+          "AWSSDK.Core": "4.0.4"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.S3.dll": {
@@ -65,36 +67,36 @@
           }
         }
       },
-      "AWSSDK.SecurityToken/3.7.100.14": {
+      "AWSSDK.SecurityToken/4.0.6.2": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29"
+          "AWSSDK.Core": "4.0.4"
         },
         "runtime": {
-          "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.100.14"
+          "lib/net8.0/AWSSDK.SecurityToken.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.6.2"
           }
         }
       },
-      "AWSSDK.SimpleNotificationService/3.7.300.21": {
+      "AWSSDK.SimpleNotificationService/4.0.2.29": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29"
+          "AWSSDK.Core": "4.0.4"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.SimpleNotificationService.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.300.21"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.2.29"
           }
         }
       },
-      "AWSSDK.SQS/4.0.2.25": {
+      "AWSSDK.SQS/4.0.2.27": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.3.29"
+          "AWSSDK.Core": "4.0.4"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.SQS.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.2.25"
+            "fileVersion": "4.0.2.27"
           }
         }
       },
@@ -137,14 +139,14 @@
           }
         }
       },
-      "Hangfire.Core/1.8.9": {
+      "Hangfire.Core/1.8.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Hangfire.Core.dll": {
-            "assemblyVersion": "1.8.9.0",
-            "fileVersion": "1.8.9.0"
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
           }
         },
         "resources": {
@@ -195,7 +197,7 @@
       "Hangfire.PostgreSql/1.20.9": {
         "dependencies": {
           "Dapper": "2.0.123",
-          "Hangfire.Core": "1.8.9",
+          "Hangfire.Core": "1.8.0",
           "Microsoft.CSharp": "4.7.0",
           "Npgsql": "9.0.2"
         },
@@ -214,49 +216,46 @@
           }
         }
       },
-      "MassTransit/8.2.0": {
+      "MassTransit/9.1.0": {
         "dependencies": {
-          "MassTransit.Abstractions": "8.2.0",
+          "MassTransit.Abstractions": "9.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Options": "9.0.0",
-          "System.Diagnostics.DiagnosticSource": "8.0.0",
-          "System.Text.Json": "9.0.0",
-          "System.Threading.Channels": "8.0.0"
+          "Microsoft.Extensions.Options": "9.0.0"
         },
         "runtime": {
-          "lib/net8.0/MassTransit.dll": {
-            "assemblyVersion": "8.2.0.0",
-            "fileVersion": "8.2.0.0"
+          "lib/net9.0/MassTransit.dll": {
+            "assemblyVersion": "9.1.0.0",
+            "fileVersion": "9.1.0.0"
           }
         }
       },
-      "MassTransit.Abstractions/8.2.0": {
+      "MassTransit.Abstractions/9.1.0": {
         "runtime": {
-          "lib/net8.0/MassTransit.Abstractions.dll": {
-            "assemblyVersion": "8.2.0.0",
-            "fileVersion": "8.2.0.0"
+          "lib/net9.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "9.1.0.0",
+            "fileVersion": "9.1.0.0"
           }
         }
       },
-      "MassTransit.AmazonSQS/8.1.3": {
+      "MassTransit.AmazonSQS/9.1.0": {
         "dependencies": {
-          "AWSSDK.SQS": "4.0.2.25",
-          "AWSSDK.SimpleNotificationService": "3.7.300.21",
-          "MassTransit": "8.2.0"
+          "AWSSDK.SQS": "4.0.2.27",
+          "AWSSDK.SimpleNotificationService": "4.0.2.29",
+          "MassTransit": "9.1.0"
         },
         "runtime": {
-          "lib/net8.0/MassTransit.AmazonSqsTransport.dll": {
-            "assemblyVersion": "8.1.3.0",
-            "fileVersion": "8.1.3.0"
+          "lib/net9.0/MassTransit.AmazonSqsTransport.dll": {
+            "assemblyVersion": "9.1.0.0",
+            "fileVersion": "9.1.0.0"
           }
         }
       },
       "MassTransit.RabbitMQ/8.2.0": {
         "dependencies": {
-          "MassTransit": "8.2.0",
+          "MassTransit": "9.1.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "runtime": {
@@ -496,7 +495,7 @@
           "Microsoft.CodeAnalysis.Common": "4.8.0",
           "System.Composition": "7.0.0",
           "System.IO.Pipelines": "7.0.0",
-          "System.Threading.Channels": "8.0.0"
+          "System.Threading.Channels": "7.0.0"
         },
         "runtime": {
           "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {
@@ -666,6 +665,11 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/10.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "9.0.0"
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.0"
@@ -778,51 +782,51 @@
           }
         }
       },
-      "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0": {
+      "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
           "Microsoft.Extensions.Options": "9.0.0"
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53112"
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52903"
           }
         }
       },
-      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0": {
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53112"
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52903"
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+      "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.0"
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+          "lib/net9.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
           }
         }
       },
-      "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
+      "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
           "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+          "lib/net9.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
           }
         }
       },
@@ -922,73 +926,32 @@
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "MongoDB.Bson/2.25.0": {
+      "MongoDB.Bson/3.8.0": {
         "dependencies": {
           "System.Memory": "4.5.5",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
-          "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "assemblyVersion": "2.25.0.0",
-            "fileVersion": "2.25.0.0"
+          "lib/net6.0/MongoDB.Bson.dll": {
+            "assemblyVersion": "3.8.0.0",
+            "fileVersion": "3.8.0.0"
           }
         }
       },
-      "MongoDB.Driver/2.25.0": {
+      "MongoDB.Driver/3.8.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "MongoDB.Bson": "2.25.0",
-          "MongoDB.Driver.Core": "2.25.0",
-          "MongoDB.Libmongocrypt": "1.8.2"
-        },
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Driver.dll": {
-            "assemblyVersion": "2.25.0.0",
-            "fileVersion": "2.25.0.0"
-          }
-        }
-      },
-      "MongoDB.Driver.Core/2.25.0": {
-        "dependencies": {
-          "AWSSDK.SecurityToken": "3.7.100.14",
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "MongoDB.Bson": "2.25.0",
-          "MongoDB.Libmongocrypt": "1.8.2",
+          "MongoDB.Bson": "3.8.0",
           "SharpCompress": "0.30.1",
           "Snappier": "1.0.0",
           "System.Buffers": "4.5.1",
           "ZstdSharp.Port": "0.7.3"
         },
         "runtime": {
-          "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
-            "assemblyVersion": "2.25.0.0",
-            "fileVersion": "2.25.0.0"
-          }
-        }
-      },
-      "MongoDB.Libmongocrypt/1.8.2": {
-        "runtime": {
-          "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/linux/native/libmongocrypt.so": {
-            "rid": "linux",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx/native/libmongocrypt.dylib": {
-            "rid": "osx",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win/native/mongocrypt.dll": {
-            "rid": "win",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
+          "lib/net6.0/MongoDB.Driver.dll": {
+            "assemblyVersion": "3.8.0.0",
+            "fileVersion": "3.8.0.0"
           }
         }
       },
@@ -1057,7 +1020,7 @@
       "RabbitMQ.Client/6.8.1": {
         "dependencies": {
           "System.Memory": "4.5.5",
-          "System.Threading.Channels": "8.0.0"
+          "System.Threading.Channels": "7.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/RabbitMQ.Client.dll": {
@@ -1198,7 +1161,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Diagnostics.DiagnosticSource/8.0.0": {},
       "System.Globalization/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1286,7 +1248,7 @@
       },
       "System.Text.Encodings.Web/4.5.0": {},
       "System.Text.Json/9.0.0": {},
-      "System.Threading.Channels/8.0.0": {},
+      "System.Threading.Channels/7.0.0": {},
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1304,7 +1266,7 @@
       },
       "Application/1.0.0": {
         "dependencies": {
-          "AWSSDK.SQS": "4.0.2.25",
+          "AWSSDK.SQS": "4.0.2.27",
           "Domain": "1.0.0",
           "FluentValidation": "11.11.0",
           "FluentValidation.DependencyInjectionExtensions": "11.11.0",
@@ -1339,19 +1301,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/4.0.3.29": {
+    "AWSSDK.Core/4.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-y07n9BHBVRDe3fDAjitnOBPwDwJ5NZ4oOh6ZvOizYWEsJnYcs34FQtTJ70Gt17qTCH86ma5kJdyMZ2lixm/dqg==",
-      "path": "awssdk.core/4.0.3.29",
-      "hashPath": "awssdk.core.4.0.3.29.nupkg.sha512"
+      "sha512": "sha512-RjBk1WDrOCpsSRGn6j2lYhgiyYnXEhMctwJevNnIPIIGpgj49ifbU6FmG1Dk+1M/VSuqeTQ1WVsssziTty7b2w==",
+      "path": "awssdk.core/4.0.4",
+      "hashPath": "awssdk.core.4.0.4.nupkg.sha512"
     },
-    "AWSSDK.Extensions.NETCore.Setup/4.0.3.33": {
+    "AWSSDK.Extensions.NETCore.Setup/4.0.3.35": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/YgVZAIhVgml5OSvFe8jxwaU6EJewioZilkwo/rs3labucBUbqZfQeAtLSgZG2xyG/JGsgNB7/O2ZQygiken4Q==",
-      "path": "awssdk.extensions.netcore.setup/4.0.3.33",
-      "hashPath": "awssdk.extensions.netcore.setup.4.0.3.33.nupkg.sha512"
+      "sha512": "sha512-lc/tLITITqhKChnURnw9H5pgDAagXTz1oyaK7iwQEAoFf01D8cKnBPGcsYBH4lk1FthGnAfstPAsjMqun6+bYg==",
+      "path": "awssdk.extensions.netcore.setup/4.0.3.35",
+      "hashPath": "awssdk.extensions.netcore.setup.4.0.3.35.nupkg.sha512"
     },
     "AWSSDK.S3/4.0.21.2": {
       "type": "package",
@@ -1360,26 +1322,26 @@
       "path": "awssdk.s3/4.0.21.2",
       "hashPath": "awssdk.s3.4.0.21.2.nupkg.sha512"
     },
-    "AWSSDK.SecurityToken/3.7.100.14": {
+    "AWSSDK.SecurityToken/4.0.6.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dGCVuVo0CFUKWW85W8YENO+aREf8sCBDjvGbnNvxJuNW4Ss+brEU9ltHhq2KfZze2VUNK1/wygbPG1bmbpyXEw==",
-      "path": "awssdk.securitytoken/3.7.100.14",
-      "hashPath": "awssdk.securitytoken.3.7.100.14.nupkg.sha512"
+      "sha512": "sha512-hih0x44WIFJkLVPP5ypQA4kETEgx0AHjvzvX63o056Ut8fL0u3xLA+gD+kaH8CGhiwHwvMjQ2rnQruHSNu5Hyw==",
+      "path": "awssdk.securitytoken/4.0.6.2",
+      "hashPath": "awssdk.securitytoken.4.0.6.2.nupkg.sha512"
     },
-    "AWSSDK.SimpleNotificationService/3.7.300.21": {
+    "AWSSDK.SimpleNotificationService/4.0.2.29": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-35vbHyFI4ZhCO/jsP1sbioLkDBhjL7McdsJuWAgpEZxP9MpoZGJXRxlzX05Hv5NdZkDaXhllB4GU9NuCFNz65w==",
-      "path": "awssdk.simplenotificationservice/3.7.300.21",
-      "hashPath": "awssdk.simplenotificationservice.3.7.300.21.nupkg.sha512"
+      "sha512": "sha512-o9CtqlUBmwFdowN6JTCR/9EY18bM+PXSJgaB2g4zxFdyOXOWmfq6B17C++wzTZHZjAKjgwqvZvaV8Ycqhu/zuw==",
+      "path": "awssdk.simplenotificationservice/4.0.2.29",
+      "hashPath": "awssdk.simplenotificationservice.4.0.2.29.nupkg.sha512"
     },
-    "AWSSDK.SQS/4.0.2.25": {
+    "AWSSDK.SQS/4.0.2.27": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oYYPNmsFZg+rTKAyX/I1gYn3NTHXsWH1+Tp1H8YN0HalMPwZIDbkm8FTGESJgHjmfq3rdEkXBln96J97JFdB7g==",
-      "path": "awssdk.sqs/4.0.2.25",
-      "hashPath": "awssdk.sqs.4.0.2.25.nupkg.sha512"
+      "sha512": "sha512-wMGXB7O/1umSSqD1KWcpiei+FRH7XJNWxaNDewF47zLY1JrTL96bUCqTdwGkDQrIVKQg9seN8ukxT2/mappBAA==",
+      "path": "awssdk.sqs/4.0.2.27",
+      "hashPath": "awssdk.sqs.4.0.2.27.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -1409,12 +1371,12 @@
       "path": "fluentvalidation.dependencyinjectionextensions/11.11.0",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512"
     },
-    "Hangfire.Core/1.8.9": {
+    "Hangfire.Core/1.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BGVEyOfBgWR1WvpDGGh0nlRTIf5JMOHBmsYq70ektjQAlwa/hto2esVv5vCKWXOFE2x8GnuGoDksQVvAbnhRUA==",
-      "path": "hangfire.core/1.8.9",
-      "hashPath": "hangfire.core.1.8.9.nupkg.sha512"
+      "sha512": "sha512-YyQwi1iKCS4HsKnwUhY5dcyxOeJ0MqA/0gjeTJdMsCXufKl73I+y8mS5MbvQBIKMGcjv0FYzjLA+v31P6G+CRw==",
+      "path": "hangfire.core/1.8.0",
+      "hashPath": "hangfire.core.1.8.0.nupkg.sha512"
     },
     "Hangfire.PostgreSql/1.20.9": {
       "type": "package",
@@ -1430,26 +1392,26 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MassTransit/8.2.0": {
+    "MassTransit/9.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Alx6HRIltMXIXB/ORfumP1gMbV7cZURgjvuQ6OaHcvIIyWgTJPqJZuzoR151n2mx1bJOVm0qIFXvMlFig2dUzw==",
-      "path": "masstransit/8.2.0",
-      "hashPath": "masstransit.8.2.0.nupkg.sha512"
+      "sha512": "sha512-2hdJGw92qSFhvu+12qsX16NPDKbpAZMiOjsxxHFjwR3MjiacNmyOh2+nE5PK5rDky67OHHwbxLqt68qTaL3Plg==",
+      "path": "masstransit/9.1.0",
+      "hashPath": "masstransit.9.1.0.nupkg.sha512"
     },
-    "MassTransit.Abstractions/8.2.0": {
+    "MassTransit.Abstractions/9.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BLMDGGvElV3Lu0KFNHZiui8BmdRCX7Y1WPSM+PW5ZKdBMPUQ3jRriZHglEh5yDLd2luJqG9nRY2+gTPwezFF7w==",
-      "path": "masstransit.abstractions/8.2.0",
-      "hashPath": "masstransit.abstractions.8.2.0.nupkg.sha512"
+      "sha512": "sha512-yesigAI5/J+YhCvnxxvMjRpH3qcH776h1Zq2xPhAJJwwVT+FilcE66yox9gPk8gsck+cjmfWUlOwEMg363cmOQ==",
+      "path": "masstransit.abstractions/9.1.0",
+      "hashPath": "masstransit.abstractions.9.1.0.nupkg.sha512"
     },
-    "MassTransit.AmazonSQS/8.1.3": {
+    "MassTransit.AmazonSQS/9.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-677J+QoI3fiBzujTGW2dW3Yj2idm+gLk4H3RgiBAnV8Ly0bWn2BI/Iy4gM1jPpTSO/h+TohQXaIEyCNay3Mz8w==",
-      "path": "masstransit.amazonsqs/8.1.3",
-      "hashPath": "masstransit.amazonsqs.8.1.3.nupkg.sha512"
+      "sha512": "sha512-YHZtBApbwDqy2Ab/3hWuhZx8RDoTycDuukz6UoNo6rds4dBpmK6TqKgPHAdFcXozxV0VKYFp22N2ybr9z/hNuw==",
+      "path": "masstransit.amazonsqs/9.1.0",
+      "hashPath": "masstransit.amazonsqs.9.1.0.nupkg.sha512"
     },
     "MassTransit.RabbitMQ/8.2.0": {
       "type": "package",
@@ -1591,6 +1553,13 @@
       "path": "microsoft.entityframeworkcore.relational/9.0.0",
       "hashPath": "microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Tools/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ui7+Y+E2KwwQvRlbOclMP8HAGXrQFQcOu3NLpKlYdmd5pbhlueyLhnW3SBv1WuXALKESGHR3lMqeANNnl/02Bw==",
+      "path": "microsoft.entityframeworkcore.tools/10.0.7",
+      "hashPath": "microsoft.entityframeworkcore.tools.10.0.7.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1661,33 +1630,33 @@
       "path": "microsoft.extensions.diagnostics.abstractions/9.0.0",
       "hashPath": "microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0": {
+    "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P9SoBuVZhJPpALZmSq72aQEb9ryP67EdquaCZGXGrrcASTNHYdrUhnpgSwIipgM5oVC+dKpRXg5zxobmF9xr5g==",
-      "path": "microsoft.extensions.diagnostics.healthchecks/8.0.0",
-      "hashPath": "microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg.sha512"
+      "sha512": "sha512-cxsK9/Dx7Ka9sfiA1nY8XlSzIaWff5FNRw0+ls8yR+aGzmnah5JGKsTHgQrehjMwGAVud/pjiUZ9MWizfUSkTQ==",
+      "path": "microsoft.extensions.diagnostics.healthchecks/9.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.9.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0": {
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AT2qqos3IgI09ok36Qag9T8bb6kHJ3uT9Q5ki6CySybFsK6/9JbvQAgAHf1pVEjST0/N4JaFaCbm40R5edffwg==",
-      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-H1IbHm/MnUgEV0N07WrkPBIIoX7isP6IPaqUdZ3CwbMcUVDGIu+okamW28kyDRfIiZqbTbyHuNIkr4ZSHPyvDw==",
+      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.abstractions.9.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+    "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
-      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-uK439QzYR0q2emLVtYzwyK3x+T5bTY4yWsd/k/ZUS9LR6Sflp8MIdhGXW8kQCd86dQD4tLqvcbLkku8qHY263Q==",
+      "path": "microsoft.extensions.fileproviders.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
+    "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AG7HWwVRdCHlaA++1oKDxLsXIBxmDpMPb3VoyOoAghEWnkUvEAdYQUwnV4jJbAaa/nMYNiEh5ByoLauZBEiovg==",
-      "path": "microsoft.extensions.hosting.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-yUKJgu81ExjvqbNWqZKshBbLntZMbMVz/P7Way2SBx7bMqA08Mfdc9O7hWDKAiSp+zPUGT6LKcSCQIPeDK+CCw==",
+      "path": "microsoft.extensions.hosting.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Http/9.0.0": {
       "type": "package",
@@ -1759,33 +1728,19 @@
       "path": "microsoft.win32.registry/5.0.0",
       "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
     },
-    "MongoDB.Bson/2.25.0": {
+    "MongoDB.Bson/3.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xQx/qtC2nu9oGiyNqAwfiDpUMweLi0nID677cyKykpwmj5AVMrnd//UwmcmuX95178DeY6rf7cjmA613TQXPiA==",
-      "path": "mongodb.bson/2.25.0",
-      "hashPath": "mongodb.bson.2.25.0.nupkg.sha512"
+      "sha512": "sha512-HeiOJUylam5nIB7b1EfzlnJbf6A9te79WO6CtsKfp8M/2EeL4SoSQFjmUpJ6/vvuaNKGENXMaX9oUJp9KpHlqw==",
+      "path": "mongodb.bson/3.8.0",
+      "hashPath": "mongodb.bson.3.8.0.nupkg.sha512"
     },
-    "MongoDB.Driver/2.25.0": {
+    "MongoDB.Driver/3.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dMqnZTV6MuvoEI4yFtSvKJdAoN6NeyAEvG8aoxnrLIVd7bR84QxLgpsM1nhK17qkOcIx/IrpMIfrvp5iMnYGBg==",
-      "path": "mongodb.driver/2.25.0",
-      "hashPath": "mongodb.driver.2.25.0.nupkg.sha512"
-    },
-    "MongoDB.Driver.Core/2.25.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oN4nLgO5HQEThTg/zqeoHqaO2+q64DBVb4r7BvhaFb0p0TM9jZKnCKvh1EA8d9E9swIz0CgvMrvL1mPyRCZzag==",
-      "path": "mongodb.driver.core/2.25.0",
-      "hashPath": "mongodb.driver.core.2.25.0.nupkg.sha512"
-    },
-    "MongoDB.Libmongocrypt/1.8.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-z/8JCULSHM1+mzkau0ivIkU9kIn8JEFFSkmYTSaMaWMMHt96JjUtMKuXxeGNGSnHZ5290ZPKIlQfjoWFk2sKog==",
-      "path": "mongodb.libmongocrypt/1.8.2",
-      "hashPath": "mongodb.libmongocrypt.1.8.2.nupkg.sha512"
+      "sha512": "sha512-BQ6bTaZCuSThmxS4vXu71a1jFGNMht2/+rjx2Uaw3AweIqRKFbPuyFoVsDnoLN935tvdC5OxwwAqrMY9eWBUng==",
+      "path": "mongodb.driver/3.8.0",
+      "hashPath": "mongodb.driver.3.8.0.nupkg.sha512"
     },
     "Mono.TextTemplating/3.0.0": {
       "type": "package",
@@ -1948,13 +1903,6 @@
       "path": "system.diagnostics.debug/4.3.0",
       "hashPath": "system.diagnostics.debug.4.3.0.nupkg.sha512"
     },
-    "System.Diagnostics.DiagnosticSource/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-c9xLpVz6PL9lp/djOWtk5KPDZq3cSYpmXoJQY524EOtuFl5z9ZtsotpsyrDW40U1DRnQSYvcPKEUV0X//u6gkQ==",
-      "path": "system.diagnostics.diagnosticsource/8.0.0",
-      "hashPath": "system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512"
-    },
     "System.Globalization/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2074,12 +2022,12 @@
       "path": "system.text.json/9.0.0",
       "hashPath": "system.text.json.9.0.0.nupkg.sha512"
     },
-    "System.Threading.Channels/8.0.0": {
+    "System.Threading.Channels/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CMaFr7v+57RW7uZfZkPExsPB6ljwzhjACWW1gfU35Y56rk72B/Wu+sTqxVmGSk4SFUlPc3cjeKND0zktziyjBA==",
-      "path": "system.threading.channels/8.0.0",
-      "hashPath": "system.threading.channels.8.0.0.nupkg.sha512"
+      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
+      "path": "system.threading.channels/7.0.0",
+      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",

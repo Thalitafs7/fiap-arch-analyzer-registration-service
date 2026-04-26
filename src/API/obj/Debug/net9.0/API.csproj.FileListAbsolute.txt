@@ -260,8 +260,6 @@ C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registrat
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\MongoDB.Bson.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\MongoDB.Driver.dll
-C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\MongoDB.Driver.Core.dll
-C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\MongoDB.Libmongocrypt.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Npgsql.dll
@@ -380,9 +378,6 @@ C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registrat
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\runtimes\linux\native\libmongocrypt.so
-C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\runtimes\win\native\mongocrypt.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Application.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Domain.dll
 C:\Projetos\FIAP_PostTech\Sistemas\5FASE\Branch2504\fiap-arch-analyzer-registration-service\src\API\bin\Debug\net9.0\Infrastructure.dll

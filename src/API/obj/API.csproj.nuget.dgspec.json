@@ -59,11 +59,19 @@
           "dependencies": {
             "AWSSDK.Extensions.NETCore.Setup": {
               "target": "Package",
-              "version": "[4.0.3.33, )"
+              "version": "[4.0.3.35, )"
             },
             "AWSSDK.SQS": {
               "target": "Package",
-              "version": "[4.0.2.25, )"
+              "version": "[4.0.2.27, )"
+            },
+            "AWSSDK.SecurityToken": {
+              "target": "Package",
+              "version": "[4.0.6.2, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[4.0.2.29, )"
             },
             "AspNetCore.HealthChecks.NpgSql": {
               "target": "Package",
@@ -372,27 +380,31 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[4.0.3.29, )"
+              "version": "[4.0.4, )"
             },
             "AWSSDK.Extensions.NETCore.Setup": {
               "target": "Package",
-              "version": "[4.0.3.33, )"
+              "version": "[4.0.3.35, )"
             },
-            "Hangfire.Core": {
+            "AWSSDK.SQS": {
               "target": "Package",
-              "version": "[1.8.9, )"
+              "version": "[4.0.2.27, )"
+            },
+            "AWSSDK.SecurityToken": {
+              "target": "Package",
+              "version": "[4.0.6.2, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[4.0.2.29, )"
             },
             "Hangfire.PostgreSql": {
               "target": "Package",
               "version": "[1.20.9, )"
             },
-            "MassTransit": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "MassTransit.AmazonSQS": {
               "target": "Package",
-              "version": "[8.1.3, )"
+              "version": "[9.1.0, )"
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
@@ -412,6 +424,12 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.7, )"
+            },
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -426,7 +444,7 @@
             },
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.25.0, )"
+              "version": "[3.8.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

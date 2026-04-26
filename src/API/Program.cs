@@ -4,6 +4,7 @@ using API.HealthChecks;
 using API.Middlewares;
 using Application;
 using Infrastructure;
+using Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
@@ -112,34 +113,26 @@ builder.Services.AddCors(options =>
 
 if (!isTestEnvironment)
 {
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-        ?? throw new InvalidOperationException("Connection string não configurada.");
+    
+    // Adiciona o serviço de Health Checks
+    builder.Services.AddHealthChecks()
+        .AddNpgSql(builder.Configuration.GetConnectionString("DefaultConnection")!);
 
-    var hcBuilder = builder.Services.AddHealthChecks()
-        .AddNpgSql(
-            connectionString,
-            name: "postgresql",
-            failureStatus: HealthStatus.Unhealthy,
-            tags: new[] { "db", "postgresql", "ready" })
-        .AddCheck<CadastrosServiceHealthCheck>(
-            "ms-cadastros",
-            failureStatus: HealthStatus.Degraded,
-            tags: new[] { "external", "http", "ready" });
 
-    var brokerProvider = builder.Configuration["MessageBroker:Provider"];
+    //var brokerProvider = builder.Configuration["MessageBroker:Provider"];
 
-    if (brokerProvider != "SQS")
-    {
-        var rabbitHost = builder.Configuration["RabbitMQ:Host"] ?? "rabbitmq-service";
-        var rabbitUser = builder.Configuration["RabbitMQ:User"] ?? "guest";
-        var rabbitPass = builder.Configuration["RabbitMQ:Password"] ?? "guest";
+    //if (brokerProvider != "SQS")
+    //{
+    //    var rabbitHost = builder.Configuration["RabbitMQ:Host"] ?? "rabbitmq-service";
+    //    var rabbitUser = builder.Configuration["RabbitMQ:User"] ?? "guest";
+    //    var rabbitPass = builder.Configuration["RabbitMQ:Password"] ?? "guest";
 
-        hcBuilder.AddRabbitMQ(
-            rabbitConnectionString: $"amqp://{rabbitUser}:{rabbitPass}@{rabbitHost}:5672",
-            name: "rabbitmq",
-            failureStatus: HealthStatus.Unhealthy,
-            tags: new[] { "messaging", "rabbitmq", "ready" });
-    }
+    //    hcBuilder.AddRabbitMQ(
+    //        rabbitConnectionString: $"amqp://{rabbitUser}:{rabbitPass}@{rabbitHost}:5672",
+    //        name: "rabbitmq",
+    //        failureStatus: HealthStatus.Unhealthy,
+    //        tags: new[] { "messaging", "rabbitmq", "ready" });
+    //}
 }
 
 var app = builder.Build();
@@ -167,11 +160,11 @@ app.UseAuthorization();
 
 if (!app.Environment.IsEnvironment("Testing"))
 {
-    //using (var scope = app.Services.CreateScope())
-    //{
-    //    var db = scope.ServiceProvider.GetRequiredService<OrdensDbContext>();
-    //    db.Database.Migrate();
-    //}
+    using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<OrdensDbContext>();
+        db.Database.Migrate();
+    }
 }
 
 app.MapControllers();
