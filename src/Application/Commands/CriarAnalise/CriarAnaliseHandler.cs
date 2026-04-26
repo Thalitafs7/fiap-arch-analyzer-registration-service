@@ -13,7 +13,7 @@ namespace Application.Commands.CriarAnalise;
 
 public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHandler<CriarAnaliseCommand, AnaliseDto>
 {
-    private readonly IAnaliseRepository _analiseRepository;    
+    private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
     private readonly ISQSManagerService _sQSManagerService;
 
@@ -21,12 +21,12 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
         IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
         ISQSManagerService sQSManagerService,
-        IUnitOfWork unitOfWork,        
+        IUnitOfWork unitOfWork,
         ILogService<CriarAnaliseHandler> logService)
         : base(logService, unitOfWork)
     {
         _sQSManagerService = sQSManagerService;
-        _analiseRepository = analiseRepository;        
+        _analiseRepository = analiseRepository;
         _fileManagerService = fileManagerService;
     }
 
@@ -64,8 +64,8 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
             await _analiseRepository.AdicionarAsync(analise, cancellationToken);
 
 
-            
-            await CommitAsync(cancellationToken);            
+
+            await CommitAsync(cancellationToken);
 
             var resultado = analise.ToDto();
 
@@ -73,7 +73,7 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
             //enviar para fila SQS para processamento assíncrono
             await _sQSManagerService.Send(JsonSerializer.Serialize(new { resultado.Id, resultado.Diagramas }));
 
-            
+
             LogFim(metodo, resultado);
 
             return resultado;

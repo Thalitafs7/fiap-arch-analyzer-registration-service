@@ -1,8 +1,6 @@
-using Amazon.S3;
 using Amazon.SQS;
 using Amazon.SQS.Model;
 using Application.Common.Interfaces;
-using Microsoft.AspNetCore.Http;
 
 namespace Infrastructure.Services.MessageSQS;
 

@@ -1,6 +1,3 @@
-using Amazon;
-using Amazon.Runtime;
-using Amazon.S3;
 using Amazon.SQS;
 using Application.Common.Interfaces;
 using Domain.Interfaces;
@@ -22,7 +19,6 @@ using Polly;
 using Polly.Extensions.Http;
 using Polly.Timeout;
 using System.Diagnostics.CodeAnalysis;
-using Amazon.Extensions.NETCore.Setup;
 
 
 
@@ -102,35 +98,11 @@ public static class DependencyInjection
 
         services.AddTransient<CorrelationIdHttpMessageHandler>();
 
-
-        services.AddHttpClient<ICadastrosService, CadastrosApiClient>(client =>
-            {
-                client.Timeout = TimeSpan.FromSeconds(30);
-            })
-            .AddHttpMessageHandler<CorrelationIdHttpMessageHandler>()
-            .AddPolicyHandler((serviceProvider, request) =>
-            {
-                var logger = serviceProvider.GetService<ILogger<CadastrosApiClient>>();
-                return GetRetryPolicy(logger);
-            })
-            .AddPolicyHandler((serviceProvider, request) =>
-            {
-                var logger = serviceProvider.GetService<ILogger<CadastrosApiClient>>();
-                return GetCircuitBreakerPolicy(logger);
-            })
-            .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(5)));
-
-        services.Decorate<ICadastrosService, CachedCadastrosService>();
-
-
-
-
-
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         services.AddScoped<IFileManagerService, FileManagerService>();
         services.AddScoped<ISQSMessageService>(services => new SQSMessageService(services.GetService<IAmazonSQS>(), "filaSQS"));
         services.AddScoped<ISQSManagerService>(services => new SQSManagerService(services.GetService<IAmazonSQS>(), "filaSQS"));
-        
+
 
 
         //// C# - dentro de AddInfrastructure (quando brokerProvider == "SQS")

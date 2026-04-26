@@ -4,17 +4,17 @@ using Amazon.SQS.Model;
 namespace Infrastructure.Services.MessageSQS;
 
 public static class SQSExtension
-{   
+{
 
     public static async Task<DeleteMessageResponse> DeleteMessage(this IAmazonSQS sqsClient, string queueUrl, Message message)
     {
-        
-            var deleteMessageRequest = new DeleteMessageRequest
-            {
-                QueueUrl = queueUrl,
-                ReceiptHandle = message.ReceiptHandle
-            };
-            return await sqsClient.DeleteMessageAsync(deleteMessageRequest);            
+
+        var deleteMessageRequest = new DeleteMessageRequest
+        {
+            QueueUrl = queueUrl,
+            ReceiptHandle = message.ReceiptHandle
+        };
+        return await sqsClient.DeleteMessageAsync(deleteMessageRequest);
     }
 
 
@@ -34,7 +34,7 @@ public static class SQSExtension
         var sendMessageRequest = new SendMessageRequest
         {
             QueueUrl = queueUrl,
-            MessageBody = message, 
+            MessageBody = message,
             MessageGroupId = messageGroupId,
             MessageAttributes = messageAtribute ?? new Dictionary<string, MessageAttributeValue>()
         };

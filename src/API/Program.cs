@@ -1,4 +1,3 @@
-using Amazon.Extensions.NETCore.Setup;
 using API.Filters;
 using API.HealthChecks;
 using API.Middlewares;
@@ -8,8 +7,6 @@ using Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -113,7 +110,7 @@ builder.Services.AddCors(options =>
 
 if (!isTestEnvironment)
 {
-    
+
     // Adiciona o serviço de Health Checks
     builder.Services.AddHealthChecks()
         .AddNpgSql(builder.Configuration.GetConnectionString("DefaultConnection")!);

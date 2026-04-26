@@ -23,7 +23,7 @@ public static class AnaliseServicoMappings
             diag.Nome,
             diag.TipoDiagrama,
             diag.URLS3Diagrama,
-            diag.Relatorio.ToDto()
+            diag.Relatorio?.ToDto()
         );
     }
 

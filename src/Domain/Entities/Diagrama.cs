@@ -14,11 +14,11 @@ public class Diagrama : Entity
 
     private Diagrama() { }
 
-    public Diagrama(         
+    public Diagrama(
         string nome,
         string tipoDiagrama,
         string urlS3Diagrama)
-    { 
+    {
         if (String.IsNullOrEmpty(nome))
             throw new DomainException("Nome é obrigatório.");
 
