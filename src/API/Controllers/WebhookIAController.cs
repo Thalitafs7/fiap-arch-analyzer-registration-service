@@ -1,3 +1,5 @@
+using Application.Commands.CriarAnalise;
+using Application.Commands.CriarRelatorio;
 using Application.Common.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -27,70 +29,36 @@ public class WebhookIAController : ControllerBase
         _logger = logger;
     }
 
-    [HttpPost("mercadopago")]
-    [AllowAnonymous]
-    public async Task<IActionResult> MercadoPagoWebhook(
-        [FromQuery(Name = "data.id")] string? dataId,
-        [FromHeader(Name = "x-signature")] string? xSignature,
-        [FromHeader(Name = "x-request-id")] string? xRequestId,
-        [FromBody] MercadoPagoWebhookPayload payload,
-        CancellationToken cancellationToken)
+    [HttpPost("relatorios")]
+    [AllowAnonymous]    
+    public async Task<IActionResult> Criar([FromForm] CriarRelatorioRequest request)
     {
-        try
-        {
-            var webhookSecret = _configuration["MercadoPago:WebhookSecret"];
-            var skipValidation = _configuration.GetValue<bool>("MercadoPago:SkipWebhookValidation");
+        var cancellationToken = new CancellationToken();
 
-            if (!skipValidation && !string.IsNullOrEmpty(webhookSecret))
-            {
-                if (string.IsNullOrEmpty(xSignature) || string.IsNullOrEmpty(xRequestId) || string.IsNullOrEmpty(dataId))
-                {
-                    _logger.LogWarning("Webhook rejeitado: headers obrigatórios ausentes");
-                    return BadRequest(new { message = "Headers obrigatórios ausentes (x-signature, x-request-id, data.id)" });
-                }
+        var command = new CriarRelatorioCommand(request.AnaliseId,request.DiagramaId, request.Nome, request.URLS3Relatorio);
+        var result = await _mediator.Send(command, cancellationToken);
+        _logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
+        return Ok(result);
 
-                if (!_signatureValidator.ValidateSignature(xSignature, xRequestId, dataId, webhookSecret))
-                {
-                    _logger.LogWarning("Webhook rejeitado: assinatura inválida - DataId: {DataId}", dataId);
-                    return Unauthorized(new { message = "Assinatura inválida" });
-                }
-            }
-
-            if (payload.Type != "payment" && payload.Action != "payment.updated" && payload.Action != "payment.created")
-            {
-                _logger.LogInformation("Webhook ignorado - Type: {Type}, Action: {Action}", payload.Type, payload.Action);
-                return Ok(new { message = "Event type não processado" });
-            }
-
-            var paymentId = dataId ?? payload.Data?.Id;
-            if (string.IsNullOrEmpty(paymentId))
-            {
-                _logger.LogWarning("Webhook rejeitado: PaymentId não encontrado");
-                return BadRequest(new { message = "PaymentId é obrigatório" });
-            }
+    }
 
 
-            return Ok(new { message = $"Status  registrado" });
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Erro ao processar webhook Mercado Pago");
-            return StatusCode(500, new { message = "Erro interno ao processar webhook" });
-        }
+    [HttpGet("analise/{hash}")]
+    [AllowAnonymous]
+    
+    public async Task<IActionResult> ObterAnalise(Guid hash)
+    {
+        //var cancellationToken = new CancellationToken();
+
+        //var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, request.Files, request.FileType.ToString());
+        //var result = await _mediator.Send(command, cancellationToken);
+
+        //_logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
+
+        return Ok();
+
     }
 
 }
 
-public record MercadoPagoWebhookPayload(
-    long Id,
-    bool LiveMode,
-    string Type,
-    DateTime DateCreated,
-    long UserId,
-    string ApiVersion,
-    string Action,
-    MercadoPagoWebhookData? Data,
-    string? ExternalReference
-);
 
-public record MercadoPagoWebhookData(string Id);
