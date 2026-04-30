@@ -4,6 +4,6 @@ namespace Domain.Interfaces;
 
 public interface IAnaliseRepository : IRepository<Analise>
 {
-    Task<Analise?> ObterPorOrdemServicoIdAsync(Guid ordemServicoId, CancellationToken cancellationToken = default);
+    Task<Analise> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default);
 
 }

@@ -4,5 +4,5 @@ namespace Domain.Interfaces;
 
 public interface IRelatorioRepository : IRepository<Relatorio>
 {
-    Task<Relatorio?> ObterPorOrdemServicoIdAsync(Guid ordemServicoId, CancellationToken cancellationToken = default);
+    Task<Relatorio?> ObterPorIdAsync(Guid id, CancellationToken cancellationToken = default);
 }

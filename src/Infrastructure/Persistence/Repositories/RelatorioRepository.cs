@@ -18,10 +18,9 @@ public class RelatorioRepository : IRelatorioRepository
         return await _context.Set<Relatorio>().FindAsync(new object[] { id }, cancellationToken);
     }
 
-    public async Task<Relatorio?> ObterPorOrdemServicoIdAsync(Guid ordemServicoId, CancellationToken cancellationToken = default)
+    public async Task<Relatorio> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await _context.Set<Relatorio>()
-            .FirstOrDefaultAsync(p => p.Id == ordemServicoId, cancellationToken);
+        return await _context.Set<Relatorio>().FirstOrDefaultAsync(p => p.Id == id, cancellationToken);
     }
 
     public async Task<IEnumerable<Relatorio>> ObterTodosAsync(CancellationToken cancellationToken = default)

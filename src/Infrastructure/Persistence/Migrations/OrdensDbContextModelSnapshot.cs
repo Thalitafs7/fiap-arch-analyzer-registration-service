@@ -147,21 +147,19 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("data_cadastro");
 
-                    b.Property<Guid>("DiagramaId")
-                        .HasColumnType("uuid");
-
                     b.Property<Guid?>("IdDiagrama")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasColumnName("id_diagrama");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("Nome");
 
                     b.Property<string>("URLS3Relatorio")
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("urls3_relatorio");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DiagramaId");
 
                     b.HasIndex("IdDiagrama")
                         .IsUnique();
@@ -179,12 +177,6 @@ namespace Infrastructure.Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Relatorio", b =>
                 {
                     b.HasOne("Domain.Entities.Diagrama", "Diagrama")
-                        .WithMany()
-                        .HasForeignKey("DiagramaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Diagrama", null)
                         .WithOne("Relatorio")
                         .HasForeignKey("Domain.Entities.Relatorio", "IdDiagrama");
 

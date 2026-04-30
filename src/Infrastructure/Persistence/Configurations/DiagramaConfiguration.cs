@@ -22,7 +22,7 @@ public class DiagramaConfiguration : IEntityTypeConfiguration<Diagrama>
 
 
         builder.HasOne(e => e.Relatorio)
-            .WithOne()
+            .WithOne(r => r.Diagrama)
             .HasForeignKey<Relatorio>(o => o.IdDiagrama);
     }
 }

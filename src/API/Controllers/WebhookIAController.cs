@@ -1,6 +1,6 @@
-using Application.Commands.CriarAnalise;
 using Application.Commands.CriarRelatorio;
 using Application.Common.Interfaces;
+using Application.Queries.ObterAnaliseServicoPorId;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -30,12 +30,12 @@ public class WebhookIAController : ControllerBase
     }
 
     [HttpPost("relatorios")]
-    [AllowAnonymous]    
+    [AllowAnonymous]
     public async Task<IActionResult> Criar([FromForm] CriarRelatorioRequest request)
     {
         var cancellationToken = new CancellationToken();
 
-        var command = new CriarRelatorioCommand(request.AnaliseId,request.DiagramaId, request.Nome, request.URLS3Relatorio);
+        var command = new CriarRelatorioCommand(request.AnaliseId, request.DiagramaId, request.Nome, request.URLS3Relatorio);
         var result = await _mediator.Send(command, cancellationToken);
         _logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
         return Ok(result);
@@ -45,19 +45,17 @@ public class WebhookIAController : ControllerBase
 
     [HttpGet("analise/{hash}")]
     [AllowAnonymous]
-    
-    public async Task<IActionResult> ObterAnalise(Guid hash)
+    public async Task<IActionResult> ObterPorId(Guid id, CancellationToken cancellationToken)
     {
-        //var cancellationToken = new CancellationToken();
+        var result = await _mediator.Send(new ObterAnaliseServicoPorIdQuery(id), cancellationToken);
 
-        //var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, request.Files, request.FileType.ToString());
-        //var result = await _mediator.Send(command, cancellationToken);
+        if (result is null)
+            return NotFound(new { message = "Analise não encontrada." });
 
-        //_logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
-
-        return Ok();
-
+        return Ok(result);
     }
+
+
 
 }
 

@@ -36,32 +36,69 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.RelatorioController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/jobs/relatorio/{hash}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hash",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.WebhookIAController",
-    "Method": "MercadoPagoWebhook",
-    "RelativePath": "api/webhooks/mercadopago",
+    "Method": "ObterPorId",
+    "RelativePath": "api/webhooks/analise/{hash}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "hash",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.WebhookIAController",
+    "Method": "Criar",
+    "RelativePath": "api/webhooks/relatorios",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "data.id",
+        "Name": "AnaliseId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiagramaId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nome",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "x-signature",
+        "Name": "URLS3Relatorio",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "x-request-id",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "payload",
-        "Type": "API.Controllers.MercadoPagoWebhookPayload",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

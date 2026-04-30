@@ -50,8 +50,8 @@ public class AnaliseRepository : IAnaliseRepository
         _context.Set<Analise>().Remove(entity);
     }
 
-    public Task<Analise?> ObterPorOrdemServicoIdAsync(Guid ordemServicoId, CancellationToken cancellationToken = default)
+    public async  Task<Analise> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        return await _context.Set<Analise>().FindAsync(new object[] { id }, cancellationToken);
     }
 }
