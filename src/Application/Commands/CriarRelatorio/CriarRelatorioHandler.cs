@@ -3,6 +3,7 @@ using Application.Common.Interfaces;
 using Application.DTOs;
 using Application.Mappings;
 using Domain.Entities;
+using Domain.Enums;
 using Domain.Interfaces;
 using MediatR;
 
@@ -12,19 +13,22 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 {
     private readonly IDiagramaRepository _diagramaRepository;
     private readonly IRelatorioRepository _relatorioRepository;
+    private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
     private readonly ISQSManagerService _sQSManagerService;
 
     public CriarRelatorioHandler(
         IDiagramaRepository diagramaRepository,
         IRelatorioRepository relatorioRepository,
+        IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
         ISQSManagerService sQSManagerService,
+
         IUnitOfWork unitOfWork,
         ILogService<CriarRelatorioHandler> logService)
         : base(logService, unitOfWork)
     {
-
+        _analiseRepository = analiseRepository;
         _sQSManagerService = sQSManagerService;
         _diagramaRepository = diagramaRepository;
         _relatorioRepository = relatorioRepository; 
@@ -41,8 +45,10 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 
 
             var diagrama = await _diagramaRepository.ObterPorIdAsync(command.DiagramaId);
+            var analise = await _analiseRepository.ObterPorIdAsync(command.AnaliseId);
 
-            if (diagrama == null) { throw new Exception("Diagrama não existe"); };
+            if (diagrama == null) { throw new Exception("Diagrama não existe"); }
+            ;
 
 
             var relatorio = new Relatorio(
@@ -52,9 +58,11 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 
             await _relatorioRepository.AdicionarAsync(relatorio, cancellationToken);
 
+            await AtualizarStatusAnalise(analise, relatorio, cancellationToken);
+
             await CommitAsync(cancellationToken);
 
-            var resultado = relatorio.ToDto();            
+            var resultado = relatorio.ToDto();
 
             LogFim(metodo, resultado);
 
@@ -65,5 +73,12 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
             LogErro(metodo, ex);
             throw;
         }
-    }   
+    }
+
+    private async Task AtualizarStatusAnalise(Analise? analise, Relatorio relatorio, CancellationToken cancellationToken)
+    {
+        
+        analise.Status = StatusAnaliseEnum.Analisado.ToString();
+        _analiseRepository.Atualizar(analise);
+    }
 }

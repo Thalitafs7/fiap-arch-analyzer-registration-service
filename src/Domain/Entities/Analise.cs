@@ -5,7 +5,7 @@ namespace Domain.Entities;
 public class Analise : Entity
 {
     public string Nome { get; private set; }
-    public string Status { get; private set; }
+    public string Status { get; set; }
     public List<Diagrama> Diagramas { get; private set; } = new();
 
 
