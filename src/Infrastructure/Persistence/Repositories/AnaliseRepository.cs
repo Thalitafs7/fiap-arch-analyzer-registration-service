@@ -50,6 +50,22 @@ public class AnaliseRepository : IAnaliseRepository
         _context.Set<Analise>().Remove(entity);
     }
 
+    public void Deletar(Analise entity)
+    {
+        var entry = _context.Entry(entity);
+        if (entry.State == EntityState.Detached)
+        {
+            entity.Ativo = false; // Marcar como inativo
+            entity.DataAtualizacao = DateTime.UtcNow; // Atualizar a data de atualização            
+            _context.Set<Analise>().Update(entity);
+        }
+        else
+        {
+            entry.State = EntityState.Modified;
+        }
+    }
+
+
     public async  Task<Analise> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Set<Analise>().FindAsync(new object[] { id }, cancellationToken);

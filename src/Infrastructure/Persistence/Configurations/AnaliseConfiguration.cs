@@ -16,10 +16,9 @@ public class AnaliseConfiguration : IEntityTypeConfiguration<Analise>
         builder.Property(e => e.Id).HasColumnName("id");
         builder.Property(e => e.Nome).HasColumnName("nome");
         builder.Property(e => e.Status).HasColumnName("status");
-
+        builder.Property(e => e.Descricao).HasColumnName("descricao");
         builder.Property(e => e.Ativo).HasColumnName("ativo");
         builder.Property(e => e.DataCadastro).HasColumnName("data_cadastro");
         builder.Property(e => e.DataAtualizacao).HasColumnName("data_atualizacao");
-
     }
 }

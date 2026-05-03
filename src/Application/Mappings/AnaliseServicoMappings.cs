@@ -8,6 +8,7 @@ public static class AnaliseServicoMappings
     public static AnaliseDto ToDto(this Analise an)
     {
         return new AnaliseDto(
+            an.ClienteId,
             an.Id,
             an.Status,
             an.Nome,

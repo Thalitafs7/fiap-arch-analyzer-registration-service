@@ -45,9 +45,9 @@ public class WebhookIAController : ControllerBase
 
     [HttpGet("analise/{hash}")]
     [AllowAnonymous]
-    public async Task<IActionResult> ObterPorId(Guid id, CancellationToken cancellationToken)
+    public async Task<IActionResult> ObterPorId(Guid hash, CancellationToken cancellationToken)
     {
-        var result = await _mediator.Send(new ObterAnaliseServicoPorIdQuery(id), cancellationToken);
+        var result = await _mediator.Send(new ObterAnaliseServicoPorIdQuery(hash), cancellationToken);
 
         if (result is null)
             return NotFound(new { message = "Analise não encontrada." });

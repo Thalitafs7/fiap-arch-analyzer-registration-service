@@ -50,4 +50,9 @@ public class RelatorioRepository : IRelatorioRepository
     {
         _context.Set<Relatorio>().Remove(entity);
     }
+
+    public void Deletar(Relatorio entity)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -11,18 +11,18 @@ using System.Text.Json;
 
 namespace Application.Commands.CriarAnalise;
 
-public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHandler<CriarAnaliseCommand, AnaliseDto>
+public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestHandler<CriarAnaliseCommand, AnaliseDto>
 {
     private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
     private readonly ISQSManagerService _sQSManagerService;
 
-    public CriarAnaliseHandler(
+    public UpdateAnaliseHandler(
         IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
         ISQSManagerService sQSManagerService,
         IUnitOfWork unitOfWork,
-        ILogService<CriarAnaliseHandler> logService)
+        ILogService<UpdateAnaliseHandler> logService)
         : base(logService, unitOfWork)
     {
         _sQSManagerService = sQSManagerService;

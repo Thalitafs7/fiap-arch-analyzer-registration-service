@@ -1,3 +1,4 @@
+using Domain.Entities;
 using Domain.Entities.Base;
 
 namespace Domain.Interfaces;
@@ -9,4 +10,5 @@ public interface IRepository<T> where T : Entity
     Task AdicionarAsync(T entity, CancellationToken cancellationToken = default);
     void Atualizar(T entity);
     void Remover(T entity);
+    void Deletar(T entity);
 }

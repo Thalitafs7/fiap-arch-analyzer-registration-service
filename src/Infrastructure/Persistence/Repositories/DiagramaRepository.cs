@@ -83,4 +83,9 @@ public class DiagramaRepository : IDiagramaRepository
     {
         _context.Diagrama.Remove(entity);
     }
+
+    public void Deletar(Diagrama entity)
+    {
+        throw new NotImplementedException();
+    }
 }
