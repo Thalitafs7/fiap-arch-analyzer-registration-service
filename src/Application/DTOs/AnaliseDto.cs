@@ -5,6 +5,7 @@ public record AnaliseDto(
     Guid Id,
     string? Nome,
     string? Status,
+    string? Descricao,
     List<DiagramaDto> Diagramas,
     DateTime DataCadastro
 );

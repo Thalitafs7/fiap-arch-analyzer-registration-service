@@ -38,7 +38,7 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
 
             AtualizarAnalise(command, analise);
 
-            await _analiseRepository.AdicionarAsync(analise, cancellationToken);
+            _analiseRepository.Atualizar(analise);
 
 
             await CommitAsync(cancellationToken);

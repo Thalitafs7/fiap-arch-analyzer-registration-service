@@ -95,7 +95,7 @@
   {
     "ContainingType": "API.Controllers.RelatorioController",
     "Method": "ObterPorId",
-    "RelativePath": "api/jobs/relatorio/{hash}",
+    "RelativePath": "api/relatorio/{hash}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -106,6 +106,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.RelatorioController",
+    "Method": "ObterAll",
+    "RelativePath": "api/relatorio/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

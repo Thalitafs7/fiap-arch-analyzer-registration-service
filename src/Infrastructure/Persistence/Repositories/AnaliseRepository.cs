@@ -28,7 +28,7 @@ public class AnaliseRepository : IAnaliseRepository
 
     public async Task<IEnumerable<Analise>> ObterTodosAsync(CancellationToken cancellationToken = default)
     {
-        return await _context.Set<Analise>().ToListAsync(cancellationToken);
+        return await _context.Set<Analise>().Include(d =>d.Diagramas).ToListAsync(cancellationToken);
     }
 
 
@@ -61,6 +61,8 @@ public class AnaliseRepository : IAnaliseRepository
         }
         else
         {
+            entity.Ativo = false; // Marcar como inativo
+            entity.DataAtualizacao = DateTime.UtcNow; // Atualizar a data de atualização    
             entry.State = EntityState.Modified;
         }
     }

@@ -149,7 +149,7 @@
         }
       }
     },
-    "/api/jobs/relatorio/{hash}": {
+    "/api/relatorio/{hash}": {
       "get": {
         "tags": [
           "Relatorio"
@@ -164,6 +164,18 @@
               "format": "uuid"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/relatorio/all": {
+      "get": {
+        "tags": [
+          "Relatorio"
         ],
         "responses": {
           "200": {
