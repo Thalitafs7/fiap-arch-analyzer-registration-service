@@ -63,6 +63,90 @@
             "description": "OK"
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Analise"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "AnaliseId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "ClienteId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Descricao": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "AnaliseId": {
+                  "style": "form"
+                },
+                "ClienteId": {
+                  "style": "form"
+                },
+                "Nome": {
+                  "style": "form"
+                },
+                "Descricao": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/analise/analise/{hash}": {
+      "delete": {
+        "tags": [
+          "Analise"
+        ],
+        "parameters": [
+          {
+            "name": "hash",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/analise/all": {
+      "get": {
+        "tags": [
+          "Analise"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/jobs/relatorio/{hash}": {
@@ -146,19 +230,12 @@
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
             "name": "hash",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],

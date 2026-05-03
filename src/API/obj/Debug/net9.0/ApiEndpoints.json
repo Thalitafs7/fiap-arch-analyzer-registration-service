@@ -36,6 +36,63 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.AnaliseController",
+    "Method": "Update",
+    "RelativePath": "api/analise",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AnaliseId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "ClienteId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AnaliseController",
+    "Method": "Get",
+    "RelativePath": "api/analise/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AnaliseController",
+    "Method": "Delete",
+    "RelativePath": "api/analise/analise/{hash}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hash",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.RelatorioController",
     "Method": "ObterPorId",
     "RelativePath": "api/jobs/relatorio/{hash}",
@@ -60,13 +117,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
         "Name": "hash",
-        "Type": "",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

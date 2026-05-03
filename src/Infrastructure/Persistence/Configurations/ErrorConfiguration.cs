@@ -13,8 +13,8 @@ public class ErrorConfiguration : IEntityTypeConfiguration<Error>
         builder.ToTable("error");
 
         builder.HasKey(e => e.Id);
-        builder.Property(e => e.Id).HasColumnName("id");
-
+        builder.Property(e => e.Descricao).HasColumnName("descricao");
+        builder.Property(e => e.Tipo).HasColumnName("tipo");
         builder.Property(e => e.Ativo).HasColumnName("ativo");
         builder.Property(e => e.DataCadastro).HasColumnName("data_cadastro");
         builder.Property(e => e.DataAtualizacao).HasColumnName("data_atualizacao");

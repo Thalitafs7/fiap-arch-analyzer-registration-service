@@ -58,6 +58,7 @@ public static class DependencyInjection
         services.AddScoped<IDiagramaRepository, DiagramaRepository>();
         services.AddScoped<IAnaliseRepository, AnaliseRepository>();
         services.AddScoped<IRelatorioRepository, RelatorioRepository>();
+        services.AddScoped<IErrorRepository, ErrorRepository>();
 
 
         var awsOptions = configuration.GetAWSOptions();
