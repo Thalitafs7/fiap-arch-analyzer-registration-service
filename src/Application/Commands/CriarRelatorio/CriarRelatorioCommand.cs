@@ -1,6 +1,5 @@
 using Application.DTOs;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 
 namespace Application.Commands.CriarRelatorio;
 

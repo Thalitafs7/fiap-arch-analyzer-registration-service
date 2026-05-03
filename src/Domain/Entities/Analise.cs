@@ -14,9 +14,9 @@ public class Analise : Entity
     private Analise() { }
 
 
-    public Analise( 
+    public Analise(
         Guid clienteId,
-        string nome,        
+        string nome,
         string status,
         List<Diagrama> diagramas,
         string? descricao = null)
@@ -25,12 +25,12 @@ public class Analise : Entity
             throw new DomainException("ClienteId é obrigatório.");
 
         if (String.IsNullOrEmpty(nome))
-            throw new DomainException("Nome é obrigatório.");        
+            throw new DomainException("Nome é obrigatório.");
 
         if (String.IsNullOrEmpty(status))
             throw new DomainException("Status é obrigatório.");
 
-        ClienteId = clienteId;        
+        ClienteId = clienteId;
         Nome = nome;
         Status = status;
         Diagramas = diagramas;

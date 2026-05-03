@@ -3,31 +3,25 @@ using Application.Common.Interfaces;
 using Application.DTOs;
 using Application.Mappings;
 using Domain.Entities;
-using Domain.Enums;
 using Domain.Interfaces;
 using MediatR;
-using Microsoft.AspNetCore.Http;
-using System.Text.Json;
 
 namespace Application.Commands.UpdateAnalise;
 
 public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestHandler<UpdateAnaliseCommand, AnaliseDto>
 {
     private readonly IAnaliseRepository _analiseRepository;
-    private readonly IFileManagerService _fileManagerService;
-    private readonly ISQSManagerService _sQSManagerService;
+    private readonly IErrorRepository _errorRepository;
 
     public UpdateAnaliseHandler(
         IAnaliseRepository analiseRepository,
-        IFileManagerService fileManagerService,
-        ISQSManagerService sQSManagerService,
+        IErrorRepository errorRepository,
         IUnitOfWork unitOfWork,
         ILogService<UpdateAnaliseHandler> logService)
         : base(logService, unitOfWork)
     {
-        _sQSManagerService = sQSManagerService;
         _analiseRepository = analiseRepository;
-        _fileManagerService = fileManagerService;
+        _errorRepository = errorRepository;
     }
 
     public async Task<AnaliseDto> Handle(UpdateAnaliseCommand command, CancellationToken cancellationToken)
@@ -58,6 +52,18 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
         catch (Exception ex)
         {
             LogErro(metodo, ex);
+
+            await _errorRepository.AdicionarAsync(new Error(
+                    Guid.NewGuid(),
+                   "UpdateAnaliseCommand",
+                   ex.GetType().ToString() + " - " +
+                   ex.Message +
+                   ex.StackTrace +
+                   ex.Source
+               ), cancellationToken);
+
+            await CommitAsync(cancellationToken);
+
             throw;
         }
     }
@@ -66,5 +72,5 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
     {
         analise.Nome = command.Nome;
         analise.Descricao = command.Descricao;
-    }  
+    }
 }

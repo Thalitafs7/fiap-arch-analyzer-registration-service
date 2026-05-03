@@ -16,10 +16,12 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
     private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
     private readonly ISQSManagerService _sQSManagerService;
+    private readonly IErrorRepository _errorRepository;
 
     public UpdateAnaliseHandler(
         IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
+        IErrorRepository errorRepository,
         ISQSManagerService sQSManagerService,
         IUnitOfWork unitOfWork,
         ILogService<UpdateAnaliseHandler> logService)
@@ -28,6 +30,7 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
         _sQSManagerService = sQSManagerService;
         _analiseRepository = analiseRepository;
         _fileManagerService = fileManagerService;
+        _errorRepository = errorRepository;
     }
 
     public async Task<AnaliseDto> Handle(CriarAnaliseCommand command, CancellationToken cancellationToken)
@@ -46,7 +49,7 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
                 command.ClienteId,
                 command.Nome,
                 StatusAnaliseEnum.Recebido.ToString(),
-                diagramas
+                diagramas, command.Descricao
                 );
 
 
@@ -81,6 +84,16 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
         catch (Exception ex)
         {
             LogErro(metodo, ex);
+            await _errorRepository.AdicionarAsync(new Error(
+                 Guid.NewGuid(),
+                "CriarAnaliseCommand",
+                ex.GetType().ToString() + " - " +
+                ex.Message +
+                ex.StackTrace +
+                ex.Source
+            ), cancellationToken);
+
+            await CommitAsync(cancellationToken);
             throw;
         }
     }

@@ -66,7 +66,7 @@ public class AnaliseRepository : IAnaliseRepository
     }
 
 
-    public async  Task<Analise> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default)
+    public async Task<Analise> ObterPorOrdemServicoIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Set<Analise>().FindAsync(new object[] { id }, cancellationToken);
     }

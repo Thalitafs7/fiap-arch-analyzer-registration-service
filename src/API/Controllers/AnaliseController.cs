@@ -2,11 +2,9 @@ using Application.Commands.CriarAnalise;
 using Application.Commands.DeletarAnalise;
 using Application.Commands.UpdateAnalise;
 using Application.Queries.ObterAnaliseAllServico;
-using Application.Queries.ObterAnaliseServicoPorId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
-using static MassTransit.ValidationResultExtensions;
 
 namespace API.Controllers;
 

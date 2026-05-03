@@ -13,6 +13,7 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 {
     private readonly IDiagramaRepository _diagramaRepository;
     private readonly IRelatorioRepository _relatorioRepository;
+    private readonly IErrorRepository _errorRepository;
     private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
     private readonly ISQSManagerService _sQSManagerService;
@@ -20,7 +21,8 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
     public CriarRelatorioHandler(
         IDiagramaRepository diagramaRepository,
         IRelatorioRepository relatorioRepository,
-        IAnaliseRepository analiseRepository,
+        IErrorRepository errorRepository,
+    IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
         ISQSManagerService sQSManagerService,
 
@@ -29,9 +31,10 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         : base(logService, unitOfWork)
     {
         _analiseRepository = analiseRepository;
+        _errorRepository = errorRepository;
         _sQSManagerService = sQSManagerService;
         _diagramaRepository = diagramaRepository;
-        _relatorioRepository = relatorioRepository; 
+        _relatorioRepository = relatorioRepository;
         _fileManagerService = fileManagerService;
     }
 
@@ -71,13 +74,24 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         catch (Exception ex)
         {
             LogErro(metodo, ex);
+            await _errorRepository.AdicionarAsync(new Error(
+                   Guid.NewGuid(),
+                  "CriarRelatorioCommand",
+                  ex.GetType().ToString() + " - " +
+                  ex.Message +
+                  ex.StackTrace +
+                  ex.Source
+              ), cancellationToken);
+
+            await CommitAsync(cancellationToken);
+
             throw;
         }
     }
 
     private async Task AtualizarStatusAnalise(Analise? analise, Relatorio relatorio, CancellationToken cancellationToken)
     {
-        
+
         analise.Status = StatusAnaliseEnum.Analisado.ToString();
         _analiseRepository.Atualizar(analise);
     }

@@ -17,7 +17,7 @@ public class CriarRelatorioValidator : AbstractValidator<CriarRelatorioCommand>
         RuleFor(x => x.URLS3Relatorio)
             .NotEmpty()
             .WithMessage("URLS3 do relátorio é obrigátorio");
-        
+
     }
 }
 

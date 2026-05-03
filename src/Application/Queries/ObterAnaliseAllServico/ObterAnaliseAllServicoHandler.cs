@@ -28,7 +28,7 @@ public class ObterAnaliseAllServicoHandler : QueryHandlerBase<ObterAnaliseAllSer
             LogInicio(metodo, query);
 
             var analiseServico = await _analiseRepository.ObterTodosAsync(cancellationToken);
-            
+
 
             var resultado = analiseServico.Select(o => o.ToDto()).ToList();
 

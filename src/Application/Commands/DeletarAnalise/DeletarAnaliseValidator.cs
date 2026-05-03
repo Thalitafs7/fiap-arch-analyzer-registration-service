@@ -9,8 +9,8 @@ public class DeletarAnaliseValidator : AbstractValidator<DeletarAnaliseCommand>
         RuleFor(x => x.Id)
             .NotEmpty()
             .WithMessage("Id é obrigatório.");
-        
-    }    
+
+    }
 
 }
 

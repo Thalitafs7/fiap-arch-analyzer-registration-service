@@ -4,6 +4,6 @@ namespace Domain.Interfaces;
 
 public interface IErrorRepository : IRepository<Error>
 {
-    
+
 
 }

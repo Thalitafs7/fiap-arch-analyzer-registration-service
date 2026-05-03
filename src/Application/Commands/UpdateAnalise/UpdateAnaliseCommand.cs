@@ -7,6 +7,6 @@ public record UpdateAnaliseCommand(
     Guid ClienteId,
     Guid Id,
     string? Descricao,
-    string Nome    
+    string Nome
 
 ) : IRequest<AnaliseDto>;

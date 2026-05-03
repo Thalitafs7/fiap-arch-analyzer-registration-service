@@ -7,4 +7,16 @@ public class Error : Entity
     public string? Tipo { get; set; }
     public string Descricao { get; private set; } = default!;
     public DateTime DataCadastro { get; private set; }
+
+
+    private Error() { }
+
+
+    public Error(Guid id, string tipo, string descricao)
+    {
+        Id = id;
+        Tipo = tipo;
+        Descricao = descricao;
+        DataCadastro = DateTime.UtcNow;
+    }
 }

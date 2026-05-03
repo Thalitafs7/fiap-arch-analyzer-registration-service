@@ -1,5 +1,4 @@
 using Domain.Entities;
-using MassTransit.Internals.GraphValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Diagnostics.CodeAnalysis;

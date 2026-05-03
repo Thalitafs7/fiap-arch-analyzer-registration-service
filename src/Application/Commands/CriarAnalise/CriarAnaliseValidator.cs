@@ -1,4 +1,5 @@
 using FluentValidation;
+using Microsoft.AspNetCore.Http;
 
 namespace Application.Commands.CriarAnalise;
 
@@ -23,31 +24,33 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
             .When(x => !string.IsNullOrEmpty(x.Descricao))
             .WithMessage("Descrição deve ter no máximo 1000 caracteres.");
 
-        // Validação de tipo/ extensão do arquivo: aceita .pdf, .jpeg, .png
-        RuleFor(x => x.FileType)
-            .NotEmpty()
-            .WithMessage("Tipo de arquivo é obrigátorio")
+        // Valida cada arquivo da coleção: só permite .pdf, .jpeg, .png e .docx
+        RuleForEach(x => x.Files)
             .Must(BeAllowedFileType)
-            .WithMessage("Somente arquivos com extensão .pdf, .jpeg ou .png são permitidos.");
+            .WithMessage("Somente arquivos com extensão .pdf, .jpeg, .png ou .docx são permitidos.");
     }
 
-
-    private bool BeAllowedFileType(string? fileType)
+    private bool BeAllowedFileType(IFormFile? file)
     {
-        if (string.IsNullOrWhiteSpace(fileType))
-            return false;
+        if (file == null) return false;
 
-        // Primeiro, tenta extrair extensão de nome de arquivo (.pdf, .jpeg, .png)
-        var ext = Path.GetExtension(fileType);
+        // Tenta extrair extensão do nome do arquivo
+        var ext = Path.GetExtension(file.FileName);
         if (!string.IsNullOrEmpty(ext))
         {
             var normalized = ext.TrimStart('.').ToLowerInvariant();
-            return normalized == "pdf" || normalized == "jpeg" || normalized == "png";
+            return normalized == "pdf"
+                || normalized == "jpeg"
+                || normalized == "png"
+                || normalized == "docx";
         }
 
-        // Fallback: suportar também MIME types comuns
-        var lower = fileType.Trim().ToLowerInvariant();
-        return lower == "application/pdf" || lower == "image/png" || lower == "image/jpeg";
+        // Fallback para content-type (MIME)
+        var ct = file.ContentType?.Trim().ToLowerInvariant();
+        return ct == "application/pdf"
+            || ct == "image/png"
+            || ct == "image/jpeg"
+            || ct == "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
     }
 
 }

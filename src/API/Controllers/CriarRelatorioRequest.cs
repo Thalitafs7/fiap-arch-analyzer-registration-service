@@ -1,5 +1,3 @@
-using Domain.Entities;
-
 namespace API.Controllers;
 
 public record CriarRelatorioRequest(

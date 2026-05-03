@@ -1,6 +1,3 @@
-using Application.Commands.CriarAnalise;
-using Application.Commands.CriarRelatorio;
-using Application.Queries.ObterAnaliseServicoPorId;
 using Application.Queries.ObterRelatorioServico;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
