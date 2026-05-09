@@ -1,34 +1,28 @@
 using Domain.Entities.Base;
-using Domain.Exceptions;
 
 namespace Domain.Entities;
 
 public class Relatorio : Entity
 {
     public string? Nome { get; private set; }
-    public string? URLS3Relatorio { get; private set; }
+    public Guid? Soat_Analysis_Id { get; private set; }
     public Diagrama Diagrama { get; private set; }
     public Guid? IdDiagrama { get; private set; }
-
+    public List<string>? Componentes_Identificado { get; private set; }
+    public List<string>? Risco_Arquitetura { get; private set; }
+    public List<string>? Recomendacao { get; private set; }    
+    public string? Message_Error { get; private set; }
 
 
     private Relatorio() { }
 
-    public Relatorio(
-        string nome,
-        string urlS3Relatorio, Guid idDiagrama)
-    {
-        if (String.IsNullOrEmpty(nome))
-            throw new DomainException("Nome é obrigatório.");
-
-        if (String.IsNullOrEmpty(urlS3Relatorio))
-            throw new DomainException("URLS3 relatório é obrigatório.");
-
-        if (idDiagrama == Guid.Empty)
-            throw new DomainException("Id do diagrama é obrigatório.");
-
+    public Relatorio(string nome, Guid? soat_Analysis_Id, Guid idDiagrama, List<string> componentes_Identificado, List<string> risco_Arquitetura, List<string> recomendacao)
+    {   
         Nome = nome;
-        URLS3Relatorio = urlS3Relatorio;
+        Soat_Analysis_Id = soat_Analysis_Id;
         IdDiagrama = idDiagrama;
+        Componentes_Identificado = componentes_Identificado;
+        Risco_Arquitetura = risco_Arquitetura;
+        Recomendacao = recomendacao;
     }
 }

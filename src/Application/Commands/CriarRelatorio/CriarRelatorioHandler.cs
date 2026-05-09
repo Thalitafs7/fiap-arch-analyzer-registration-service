@@ -6,6 +6,7 @@ using Domain.Entities;
 using Domain.Enums;
 using Domain.Interfaces;
 using MediatR;
+using System.Data;
 
 namespace Application.Commands.CriarRelatorio;
 
@@ -46,22 +47,22 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         {
             LogInicio(metodo, command);
 
+            var analise = await _analiseRepository.ObterPorIdAsync(command.AnalysisId);
+            var diagrama = await _diagramaRepository.ObterPorAnaliseAsync(analise.Id);            
 
-            var diagrama = await _diagramaRepository.ObterPorIdAsync(command.DiagramaId);
-            var analise = await _analiseRepository.ObterPorIdAsync(command.AnaliseId);
-
-            if (diagrama == null) { throw new Exception("Diagrama não existe"); }
-            ;
+            if (diagrama == null) { throw new Exception("Diagrama não existe"); }            ;
 
 
-            var relatorio = new Relatorio(
-                command.Nome,
-                command.URLS3Relatorio, diagrama.Id
-                );
+            var relatorio = new Relatorio(command.Report.ExecutiveSummary, command.
+                soat_analysis_id,  diagrama.Id, command.Report.ComponentsIdentified, command.Report.ArchitecturalRisks, 
+                command.Report.Recommendations);
+
+
+
 
             await _relatorioRepository.AdicionarAsync(relatorio, cancellationToken);
 
-            await AtualizarStatusAnalise(analise, relatorio, cancellationToken);
+                await AtualizarStatusAnalise(analise, command.Status ?? string.Empty, cancellationToken);
 
             await CommitAsync(cancellationToken);
 
@@ -89,10 +90,25 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         }
     }
 
-    private async Task AtualizarStatusAnalise(Analise? analise, Relatorio relatorio, CancellationToken cancellationToken)
+    private async Task AtualizarStatusAnalise(Analise? analise, string status, CancellationToken cancellationToken)
     {
-
-        analise.Status = StatusAnaliseEnum.Analisado.ToString();
+        analise.Status = MapStatus(status);
+        analise.DataAtualizacao = DateTime.UtcNow;
         _analiseRepository.Atualizar(analise);
+    }
+
+    public static string MapStatus(string? status)
+    {
+        if (string.IsNullOrWhiteSpace(status))
+            return "Erro";
+
+        return status.Trim().ToUpperInvariant() switch
+        {
+            "RECEIVED" => "Recebido",
+            "PROCESSING" => "Em Processamento",
+            "ANALYZED" => "Analisado",
+            "ERROR" => "Erro",
+            _ => "Erro"
+        };
     }
 }

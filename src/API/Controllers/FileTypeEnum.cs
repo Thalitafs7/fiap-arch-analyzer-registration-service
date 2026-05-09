@@ -3,8 +3,8 @@
     public enum FileTypeEnum
     {
         PDF = 1,
-        DOCX = 2,
-        JPG = 3,
+        JPG = 2,
+        JPEG = 3,
         PNG = 4
     }
 }

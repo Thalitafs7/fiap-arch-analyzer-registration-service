@@ -10,6 +10,8 @@ public class Diagrama : Entity
     public string? URLS3Diagrama { get; private set; }
     public Relatorio? Relatorio { get; private set; } = default!;
     public Guid IdRelatorio { get; private set; } = default!;
+    public Analise Analise { get; private set; } = default!;
+    public Guid AnaliseId { get; private set; } = default!;
 
 
     private Diagrama() { }

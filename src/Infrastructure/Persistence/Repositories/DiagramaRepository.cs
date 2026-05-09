@@ -13,6 +13,12 @@ public class DiagramaRepository : IDiagramaRepository
         _context = context;
     }
 
+
+    public async Task<Diagrama?> ObterPorAnaliseAsync(Guid analiseId, CancellationToken cancellationToken = default)
+    {
+        return await _context.Diagrama.Where(o => o.AnaliseId == analiseId).FirstOrDefaultAsync(cancellationToken);
+    }
+
     public async Task<Diagrama?> ObterPorIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Diagrama.FindAsync(new object[] { id }, cancellationToken);

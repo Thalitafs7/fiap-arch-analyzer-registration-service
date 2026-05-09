@@ -6,17 +6,17 @@ public class CriarRelatorioValidator : AbstractValidator<CriarRelatorioCommand>
 {
     public CriarRelatorioValidator()
     {
-        RuleFor(x => x.DiagramaId)
+        RuleFor(x => x.AnalysisId)
             .NotEmpty()
-            .WithMessage("DiagramaId é obrigatório.");
+            .WithMessage("Id Analise é obrigatório.");
 
-        RuleFor(x => x.Nome)
+        RuleFor(x => x.Report.ExecutiveSummary)
             .NotEmpty()
             .WithMessage("Nome da analise é obrigatório");
 
-        RuleFor(x => x.URLS3Relatorio)
+        RuleFor(x => x.Report)
             .NotEmpty()
-            .WithMessage("URLS3 do relátorio é obrigátorio");
+            .WithMessage("Relátorio é obrigátorio");
 
     }
 }

@@ -34,7 +34,12 @@ public static class AnaliseServicoMappings
         return new RelatorioDto(
             rel.Id,
             rel.Nome,
-            rel.URLS3Relatorio
+            rel.Soat_Analysis_Id,
+            rel.IdDiagrama,            
+            rel.Componentes_Identificado,
+            rel.Risco_Arquitetura,
+            rel.Recomendacao,
+            rel.Message_Error
         );
     }
 }

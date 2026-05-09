@@ -35,7 +35,7 @@ public class WebhookIAController : ControllerBase
     {
         var cancellationToken = new CancellationToken();
 
-        var command = new CriarRelatorioCommand(request.AnaliseId, request.DiagramaId, request.Nome, request.URLS3Relatorio);
+        var command = new CriarRelatorioCommand(request.AnalysisId, request.Soat_analysis_id, request.Status, request.Report, request.ErrorMessage, request.CompletedAt);
         var result = await _mediator.Send(command, cancellationToken);
         _logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
         return Ok(result);

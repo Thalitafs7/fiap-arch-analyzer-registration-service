@@ -5,6 +5,8 @@ namespace Application.Commands.CriarAnalise;
 
 public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
 {
+
+    private const long MaxFileSizeBytes = 10 * 1024 * 1024; // 10 MB
     public CriarAnaliseValidator()
     {
         RuleFor(x => x.ClienteId)
@@ -27,7 +29,9 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
         // Valida cada arquivo da coleção: só permite .pdf, .jpeg, .png e .docx
         RuleForEach(x => x.Files)
             .Must(BeAllowedFileType)
-            .WithMessage("Somente arquivos com extensão .pdf, .jpeg, .png ou .docx são permitidos.");
+            .WithMessage("Somente arquivos com extensão .pdf, .jpeg, .png ou .docx são permitidos.")
+            .Must(file => file != null && file.Length <= MaxFileSizeBytes)
+            .WithMessage($"Cada arquivo deve ter no máximo {MaxFileSizeBytes / (1024 * 1024)}MB.");
     }
 
     private bool BeAllowedFileType(IFormFile? file)
@@ -42,7 +46,7 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
             return normalized == "pdf"
                 || normalized == "jpeg"
                 || normalized == "png"
-                || normalized == "docx";
+                || normalized == "jpg";
         }
 
         // Fallback para content-type (MIME)
@@ -50,7 +54,7 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
         return ct == "application/pdf"
             || ct == "image/png"
             || ct == "image/jpeg"
-            || ct == "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+            || ct == "image/jpg";
     }
 
 }

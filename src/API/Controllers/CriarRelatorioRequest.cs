@@ -1,8 +1,15 @@
+using Application.Commands.CriarRelatorio;
+using System.Text.Json.Serialization;
+
 namespace API.Controllers;
 
+
 public record CriarRelatorioRequest(
-         Guid AnaliseId,
-         Guid DiagramaId,
-         string? Nome,
-         string? URLS3Relatorio
+    Guid AnalysisId,
+    Guid Soat_analysis_id,
+    string? Status,
+    ReportDetail Report,
+    string? ErrorMessage,
+    DateTimeOffset? CompletedAt
 );
+
