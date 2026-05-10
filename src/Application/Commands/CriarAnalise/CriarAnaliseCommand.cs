@@ -1,6 +1,6 @@
+using Application.Common.Models;
 using Application.DTOs;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 
 namespace Application.Commands.CriarAnalise;
 
@@ -9,7 +9,7 @@ public record CriarAnaliseCommand(
     string? Descricao,
     string Nome,
     string Tipo,
-    List<IFormFile> Files,
+    List<FileData> Files,
     string FileType
 
 ) : IRequest<AnaliseDto>;

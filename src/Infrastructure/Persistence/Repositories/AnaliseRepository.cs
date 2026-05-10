@@ -52,17 +52,15 @@ public class AnaliseRepository : IAnaliseRepository
 
     public void Deletar(Analise entity)
     {
+        entity.Desativar();
+
         var entry = _context.Entry(entity);
         if (entry.State == EntityState.Detached)
         {
-            entity.Ativo = false; // Marcar como inativo
-            entity.DataAtualizacao = DateTime.UtcNow; // Atualizar a data de atualização            
             _context.Set<Analise>().Update(entity);
         }
         else
         {
-            entity.Ativo = false; // Marcar como inativo
-            entity.DataAtualizacao = DateTime.UtcNow; // Atualizar a data de atualização    
             entry.State = EntityState.Modified;
         }
     }

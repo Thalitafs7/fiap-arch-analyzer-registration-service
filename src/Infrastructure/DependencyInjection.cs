@@ -13,14 +13,7 @@ using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using MongoDB.Driver;
-using Polly;
-using Polly.Extensions.Http;
-using Polly.Timeout;
 using System.Diagnostics.CodeAnalysis;
-
-
 
 
 
@@ -66,65 +59,17 @@ public static class DependencyInjection
         services.AddAWSService<Amazon.S3.IAmazonS3>();
         services.AddAWSService<Amazon.SQS.IAmazonSQS>();
 
-
-        //var region = RegionEndpoint.GetBySystemName(configuration["AWS:Region"] ?? "us-east-1");
-        //var accessKey = configuration["AWS:AccessKey"];
-        //var secretKey = configuration["AWS:SecretKey"];
-        //var credentials = new BasicAWSCredentials(accessKey, secretKey);
-
-        //services.AddSingleton<IAmazonS3>(sp => new AmazonS3Client(credentials, region));
-        //services.AddSingleton<IAmazonSQS>(sp => new AmazonSQSClient(credentials, region));
-
-        var brokerProvider = configuration["MessageBroker:Provider"];
-        if (brokerProvider == "SQS")
-        {
-            services.AddScoped<ISQSMessageService, SQSMessageService>();
-            // garantir registro do IAmazonSQS (via AddAWSService ou manual)
-        }
-        else
-        {
-            // registrar implementação alternativa ou não registrar
-        }
-
-
-        var mongoConnectionString = configuration.GetConnectionString("MongoConnection") ?? "mongodb://localhost:27017";
-        var mongoDatabaseName = configuration["MongoDB:DatabaseName"] ?? "ordens_db";
-        services.AddSingleton<IMongoClient>(sp => new MongoClient(mongoConnectionString));
-        services.AddSingleton(sp => sp.GetRequiredService<IMongoClient>().GetDatabase(mongoDatabaseName));
-
-
         services.Configure<SagaSettings>(configuration.GetSection(SagaSettings.SectionName));
 
         services.AddMemoryCache();
 
         services.AddTransient<CorrelationIdHttpMessageHandler>();
 
+        var sqsQueueUrl = configuration["AWS:SQS:QueueUrl"] ?? throw new InvalidOperationException("AWS:SQS:QueueUrl not configured.");
         services.AddScoped<ICurrentUserService, CurrentUserService>();
-        services.AddScoped<IFileManagerService, FileManagerService>();
-        services.AddScoped<ISQSMessageService>(services => new SQSMessageService(services.GetService<IAmazonSQS>(), "filaSQS"));
-        services.AddScoped<ISQSManagerService>(services => new SQSManagerService(services.GetService<IAmazonSQS>(), "filaSQS"));
-
-
-
-        //// C# - dentro de AddInfrastructure (quando brokerProvider == "SQS")
-        //var queueUrl = configuration["AWS:QueueUrl"];
-        //if (string.IsNullOrWhiteSpace(queueUrl))
-        //{
-        //    throw new InvalidOperationException("AWS:QueueUrl não configurada.");
-        //}
-
-        //services.AddScoped<ISQSMessageService>(sp =>
-        //{
-        //    var sqs = sp.GetRequiredService<IAmazonSQS>();
-        //    return new SQSMessageService(sqs, queueUrl);
-        //});
-
-        //services.AddScoped<ISQSManagerService>(sp =>
-        //{
-        //    var sqs = sp.GetRequiredService<IAmazonSQS>();
-        //    return new SQSManagerService(sqs, queueUrl);
-        //});
-
+        services.AddScoped<IFileManagerService>(sp => new FileManagerService(sp.GetRequiredService<Amazon.S3.IAmazonS3>(), configuration));
+        services.AddScoped<ISQSMessageService>(services => new SQSMessageService(services.GetService<IAmazonSQS>(), sqsQueueUrl));
+        services.AddScoped<ISQSManagerService>(services => new SQSManagerService(services.GetService<IAmazonSQS>(), sqsQueueUrl));
 
         services.AddScoped<ICorrelationIdService, CorrelationIdService>();
         services.AddScoped(typeof(ILogService<>), typeof(LogService<>));
@@ -181,49 +126,5 @@ public static class DependencyInjection
         });
 
         return services;
-    }
-
-    private static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy(ILogger? logger)
-    {
-        return HttpPolicyExtensions
-            .HandleTransientHttpError()
-            .Or<TimeoutRejectedException>()
-            .WaitAndRetryAsync(
-                retryCount: 3,
-                sleepDurationProvider: retryAttempt =>
-                    TimeSpan.FromMilliseconds(Math.Pow(2, retryAttempt) * 100),
-                onRetry: (outcome, timespan, retryCount, context) =>
-                {
-                    logger?.LogWarning(
-                        "HTTP Retry {RetryCount}/3 após {Delay}ms. Motivo: {Reason}",
-                        retryCount,
-                        timespan.TotalMilliseconds,
-                        outcome.Exception?.Message ?? outcome.Result?.StatusCode.ToString());
-                });
-    }
-
-    private static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy(ILogger? logger)
-    {
-        return HttpPolicyExtensions
-            .HandleTransientHttpError()
-            .Or<TimeoutRejectedException>()
-            .CircuitBreakerAsync(
-                handledEventsAllowedBeforeBreaking: 5,
-                durationOfBreak: TimeSpan.FromSeconds(30),
-                onBreak: (outcome, duration) =>
-                {
-                    logger?.LogError(
-                        "Circuit Breaker ABERTO por {Duration}s. Motivo: {Reason}",
-                        duration.TotalSeconds,
-                        outcome.Exception?.Message ?? outcome.Result?.StatusCode.ToString());
-                },
-                onReset: () =>
-                {
-                    logger?.LogInformation("Circuit Breaker FECHADO - serviço recuperado");
-                },
-                onHalfOpen: () =>
-                {
-                    logger?.LogWarning("Circuit Breaker HALF-OPEN - testando serviço");
-                });
     }
 }

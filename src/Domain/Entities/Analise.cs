@@ -1,39 +1,60 @@
 using Domain.Entities.Base;
+using Domain.Enums;
 using Domain.Exceptions;
 
 namespace Domain.Entities;
+
 public class Analise : Entity
 {
-    public Guid ClienteId { get; set; }
-    public string Nome { get; set; } // Altere de private set para set público
-    public string Status { get; set; }
-    public string Descricao { get; set; }
+    public Guid ClienteId { get; private set; }
+    public string Nome { get; private set; } = default!;
+    public StatusAnalise Status { get; private set; }
+    public string Descricao { get; private set; } = string.Empty;
     public List<Diagrama> Diagramas { get; private set; } = new();
 
-
-    private Analise() { }
-
+    protected Analise() { }
 
     public Analise(
         Guid clienteId,
         string nome,
-        string status,
+        StatusAnalise status,
         List<Diagrama> diagramas,
         string? descricao = null)
     {
         if (clienteId == Guid.Empty)
-            throw new DomainException("ClienteId é obrigatório.");
+            throw new DomainException("ClienteId Ã© obrigatÃ³rio.");
 
-        if (String.IsNullOrEmpty(nome))
-            throw new DomainException("Nome é obrigatório.");
-
-        if (String.IsNullOrEmpty(status))
-            throw new DomainException("Status é obrigatório.");
+        if (string.IsNullOrWhiteSpace(nome))
+            throw new DomainException("Nome Ã© obrigatÃ³rio.");
 
         ClienteId = clienteId;
         Nome = nome;
         Status = status;
-        Diagramas = diagramas;
+        Diagramas = diagramas ?? new List<Diagrama>();
         Descricao = descricao ?? string.Empty;
+    }
+
+    public void AlterarNome(string nome)
+    {
+        if (string.IsNullOrWhiteSpace(nome))
+            throw new DomainException("Nome Ã© obrigatÃ³rio.");
+
+        Nome = nome;
+        AtualizarDataModificacao();
+    }
+
+    public void AtualizarStatus(StatusAnalise status)
+    {
+        Status = status;
+        AtualizarDataModificacao();
+    }
+
+    public void AlterarDescricao(string descricao)
+    {
+        if (descricao is null)
+            throw new DomainException("DescriÃ§Ã£o nÃ£o pode ser nula.");
+
+        Descricao = descricao;
+        AtualizarDataModificacao();
     }
 }

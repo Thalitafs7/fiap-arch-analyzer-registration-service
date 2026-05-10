@@ -1,14 +1,12 @@
-using Amazon.SQS;
+﻿using Amazon.SQS;
 using Amazon.SQS.Model;
 
 namespace Infrastructure.Services.MessageSQS;
 
-public static class SQSExtension
+public static class SqsExtension
 {
-
     public static async Task<DeleteMessageResponse> DeleteMessage(this IAmazonSQS sqsClient, string queueUrl, Message message)
     {
-
         var deleteMessageRequest = new DeleteMessageRequest
         {
             QueueUrl = queueUrl,
@@ -16,7 +14,6 @@ public static class SQSExtension
         };
         return await sqsClient.DeleteMessageAsync(deleteMessageRequest);
     }
-
 
     public static async Task<List<Message>> ReceiveMessages(this IAmazonSQS sqsClient, string queueUrl, int maxMessages = 10)
     {

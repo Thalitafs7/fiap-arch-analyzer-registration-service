@@ -11,7 +11,7 @@ public static class AnaliseServicoMappings
             an.ClienteId,
             an.Id,
             an.Nome,                        
-            an.Status,
+            an.Status.ToString(),
             an.Descricao,
             an.Diagramas.Select(d => d.ToDto()).ToList(),
             an.DataCadastro
