@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  ms-ordens-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ms-ordens-api
+    ports:
+      - "5002:5002"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=${DB_CONNECTION_STRING}
+      - Jwt__Key=${JWT_KEY}
+      - Jwt__Issuer=ms-cadastros
+      - Jwt__Audience=mecanicaos
+      - RabbitMQ__Host=ms-estoque-rabbitmq
+      - Services__MsCadastros__BaseUrl=http://ms-cadastros-api:5001
+      - MercadoPago__UseFake=true
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - mecanicaos-network
+      - mecanicaos-shared
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: ms-ordens-postgres
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres-ordens-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - mecanicaos-network
+
+volumes:
+  postgres-ordens-data:
+
+networks:
+  mecanicaos-network:
+    driver: bridge
+  mecanicaos-shared:
+    external: true
