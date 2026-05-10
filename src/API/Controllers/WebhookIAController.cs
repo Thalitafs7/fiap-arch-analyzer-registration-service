@@ -1,6 +1,8 @@
 using Application.Commands.CriarRelatorio;
+using Application.Commands.UpdateAnalise;
 using Application.Common.Interfaces;
 using Application.Queries.ObterAnaliseServicoPorId;
+using Application.Queries.UpdateAnaliseServico;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +31,7 @@ public class WebhookIAController : ControllerBase
         _logger = logger;
     }
 
-    [HttpPost("relatorios")]
+    [HttpPost("report/callback")]
     [AllowAnonymous]
     public async Task<IActionResult> Criar([FromForm] CriarRelatorioRequest request)
     {
@@ -43,7 +45,7 @@ public class WebhookIAController : ControllerBase
     }
 
 
-    [HttpGet("analise/{hash}")]
+    [HttpGet("analysis/{hash}")]
     [AllowAnonymous]
     public async Task<IActionResult> ObterPorId(Guid hash, CancellationToken cancellationToken)
     {
@@ -52,6 +54,16 @@ public class WebhookIAController : ControllerBase
         if (result is null)
             return NotFound(new { message = "Analise não encontrada." });
 
+        return Ok(result);
+    }
+
+
+    [HttpPut("analysis/{hash}/status_processing")]
+    public async Task<IActionResult> Update(Guid hash)
+    {
+        var cancellationToken = new CancellationToken();
+        var result = await _mediator.Send(new UpdateAnaliseServicoQuery(hash));
+        _logger.LogInformation("Analise atualizada com sucesso", result.Id, result.Nome);
         return Ok(result);
     }
 

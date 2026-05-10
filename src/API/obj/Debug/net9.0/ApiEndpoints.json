@@ -23,13 +23,8 @@
         "IsRequired": false
       },
       {
-        "Name": "Files",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileType",
-        "Type": "System.String",
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],
@@ -121,7 +116,7 @@
   {
     "ContainingType": "API.Controllers.WebhookIAController",
     "Method": "ObterPorId",
-    "RelativePath": "api/webhooks/analise/{hash}",
+    "RelativePath": "api/webhooks/analysis/{hash}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -136,8 +131,24 @@
   },
   {
     "ContainingType": "API.Controllers.WebhookIAController",
+    "Method": "Update",
+    "RelativePath": "api/webhooks/analysis/{hash}/status_processing",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hash",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.WebhookIAController",
     "Method": "Criar",
-    "RelativePath": "api/webhooks/relatorios",
+    "RelativePath": "api/webhooks/report/callback",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

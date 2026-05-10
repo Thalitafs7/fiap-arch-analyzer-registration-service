@@ -7,13 +7,13 @@ using MediatR;
 
 namespace Application.Queries.ObterRelatorioServico;
 
-public class ObterRelatorioServicoHandler : QueryHandlerBase<ObterRelatorioServicoHandler>, IRequestHandler<ObterRelatorioServicoQuery, RelatorioDto?>
+public class UpdateAnaliseServicoHandler : QueryHandlerBase<UpdateAnaliseServicoHandler>, IRequestHandler<ObterRelatorioServicoQuery, RelatorioDto?>
 {
     private readonly IRelatorioRepository _relatorioRepository;
 
-    public ObterRelatorioServicoHandler(
+    public UpdateAnaliseServicoHandler(
         IRelatorioRepository relatorioRepository,
-        ILogService<ObterRelatorioServicoHandler> logService)
+        ILogService<UpdateAnaliseServicoHandler> logService)
         : base(logService)
     {
         _relatorioRepository = relatorioRepository;

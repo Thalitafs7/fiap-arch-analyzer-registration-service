@@ -26,15 +26,9 @@
                   "Descricao": {
                     "type": "string"
                   },
-                  "Files": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "format": "binary"
-                    }
-                  },
-                  "FileType": {
-                    "$ref": "#/components/schemas/FileTypeEnum"
+                  "File": {
+                    "type": "string",
+                    "format": "binary"
                   }
                 }
               },
@@ -48,10 +42,7 @@
                 "Descricao": {
                   "style": "form"
                 },
-                "Files": {
-                  "style": "form"
-                },
-                "FileType": {
+                "File": {
                   "style": "form"
                 }
               }
@@ -184,7 +175,7 @@
         }
       }
     },
-    "/api/webhooks/relatorios": {
+    "/api/webhooks/report/callback": {
       "post": {
         "tags": [
           "WebhookIA"
@@ -281,8 +272,31 @@
         }
       }
     },
-    "/api/webhooks/analise/{hash}": {
+    "/api/webhooks/analysis/{hash}": {
       "get": {
+        "tags": [
+          "WebhookIA"
+        ],
+        "parameters": [
+          {
+            "name": "hash",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/webhooks/analysis/{hash}/status_processing": {
+      "put": {
         "tags": [
           "WebhookIA"
         ],
@@ -306,18 +320,6 @@
     }
   },
   "components": {
-    "schemas": {
-      "FileTypeEnum": {
-        "enum": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "type": "integer",
-        "format": "int32"
-      }
-    },
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
