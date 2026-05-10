@@ -29,8 +29,8 @@ public class AnaliseController : ControllerBase
     public async Task<IActionResult> Criar([FromForm] CriarAnaliseRequest request)
     {
         var cancellationToken = new CancellationToken();
-
-        var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, request.Files, request.FileType.ToString());
+        var files = new List<IFormFile> { request.File };
+        var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, files,null);
         var result = await _mediator.Send(command, cancellationToken);
 
         _logger.LogInformation("Analise criada com sucesso", result.Id, result.Nome);
