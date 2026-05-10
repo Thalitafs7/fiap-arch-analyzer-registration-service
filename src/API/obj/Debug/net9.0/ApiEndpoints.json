@@ -143,23 +143,53 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "AnaliseId",
+        "Name": "AnalysisId",
         "Type": "System.Guid",
         "IsRequired": false
       },
       {
-        "Name": "DiagramaId",
+        "Name": "Soat_analysis_id",
         "Type": "System.Guid",
         "IsRequired": false
       },
       {
-        "Name": "Nome",
+        "Name": "Status",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "URLS3Relatorio",
+        "Name": "Report.ComponentsIdentified",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Report.ArchitecturalRisks",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Report.Recommendations",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Report.ExecutiveSummary",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Report.RagUsed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ErrorMessage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompletedAt",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],

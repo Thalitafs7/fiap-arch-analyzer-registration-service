@@ -195,33 +195,79 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "AnaliseId": {
+                  "AnalysisId": {
                     "type": "string",
                     "format": "uuid"
                   },
-                  "DiagramaId": {
+                  "Soat_analysis_id": {
                     "type": "string",
                     "format": "uuid"
                   },
-                  "Nome": {
+                  "Status": {
                     "type": "string"
                   },
-                  "URLS3Relatorio": {
+                  "Report.ComponentsIdentified": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Report.ArchitecturalRisks": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Report.Recommendations": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Report.ExecutiveSummary": {
                     "type": "string"
+                  },
+                  "Report.RagUsed": {
+                    "type": "boolean"
+                  },
+                  "ErrorMessage": {
+                    "type": "string"
+                  },
+                  "CompletedAt": {
+                    "type": "string",
+                    "format": "date-time"
                   }
                 }
               },
               "encoding": {
-                "AnaliseId": {
+                "AnalysisId": {
                   "style": "form"
                 },
-                "DiagramaId": {
+                "Soat_analysis_id": {
                   "style": "form"
                 },
-                "Nome": {
+                "Status": {
                   "style": "form"
                 },
-                "URLS3Relatorio": {
+                "Report.ComponentsIdentified": {
+                  "style": "form"
+                },
+                "Report.ArchitecturalRisks": {
+                  "style": "form"
+                },
+                "Report.Recommendations": {
+                  "style": "form"
+                },
+                "Report.ExecutiveSummary": {
+                  "style": "form"
+                },
+                "Report.RagUsed": {
+                  "style": "form"
+                },
+                "ErrorMessage": {
+                  "style": "form"
+                },
+                "CompletedAt": {
                   "style": "form"
                 }
               }

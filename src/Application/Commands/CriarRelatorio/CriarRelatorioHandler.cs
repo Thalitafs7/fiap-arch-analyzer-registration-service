@@ -54,7 +54,7 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 
 
             var relatorio = new Relatorio(command.Report.ExecutiveSummary, command.
-                soat_analysis_id,  diagrama.Id, command.Report.ComponentsIdentified, command.Report.ArchitecturalRisks, 
+                soat_analysis_id, diagrama.Id, command.Report.ComponentsIdentified, command.Report.ArchitecturalRisks, 
                 command.Report.Recommendations);
 
 
