@@ -25,9 +25,6 @@ public class DiagramaConfiguration : IEntityTypeConfiguration<Diagrama>
                .HasField("_idRelatorio")
                .UsePropertyAccessMode(PropertyAccessMode.Field);
 
-        builder.Navigation(e => e.Relatorio)
-               .UsePropertyAccessMode(PropertyAccessMode.Field);
-
         // relação many-to-one: várias Diagramas pertencem a uma Analise
         builder.HasOne(d => d.Analise)
                .WithMany(a => a.Diagramas)

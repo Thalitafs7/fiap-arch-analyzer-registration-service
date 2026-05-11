@@ -1,5 +1,7 @@
 using Domain.Entities;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Error = Domain.Entities.Error;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -33,9 +35,9 @@ public class ErrorRepository : IErrorRepository
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Error>> ObterTodosAsync(CancellationToken cancellationToken = default)
+    public async Task<IEnumerable<Error>> ObterTodosAsync(CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        return await _context.Error.ToListAsync(cancellationToken);
     }
 
     public void Remover(Error entity)
