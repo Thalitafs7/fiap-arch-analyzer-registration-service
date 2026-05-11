@@ -1,17 +1,16 @@
 using Application.Commands.CriarAnalise;
 using Application.Commands.DeletarAnalise;
 using Application.Commands.UpdateAnalise;
+using Application.Common.Models;
 using Application.Queries.ObterAnaliseAllServico;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics.CodeAnalysis;
 
 namespace API.Controllers;
 
 [ApiController]
 [Route("api/analise")]
 //[Authorize]
-[ExcludeFromCodeCoverage]
 public class AnaliseController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -26,11 +25,15 @@ public class AnaliseController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Criar([FromForm] CriarAnaliseRequest request)
+    public async Task<IActionResult> Criar([FromForm] CriarAnaliseRequest request, CancellationToken cancellationToken)
     {
-        var cancellationToken = new CancellationToken();
-        var files = new List<IFormFile> { request.File };
-        var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, files,null);
+        var files = new List<FileData>();
+        using (var ms = new MemoryStream())
+        {
+            await request.File.CopyToAsync(ms, cancellationToken);
+            files.Add(new FileData(ms.ToArray(), request.File.FileName, request.File.ContentType));
+        }
+        var command = new CriarAnaliseCommand(Guid.NewGuid(), request.Descricao, request.Nome, request.Tipo, files, null);
         var result = await _mediator.Send(command, cancellationToken);
 
         _logger.LogInformation("Analise criada com sucesso", result.Id, result.Nome);
@@ -41,10 +44,8 @@ public class AnaliseController : ControllerBase
 
 
     [HttpPut]
-    public async Task<IActionResult> Update([FromForm] UpdateAnaliseRequest request)
+    public async Task<IActionResult> Update([FromForm] UpdateAnaliseRequest request, CancellationToken cancellationToken)
     {
-        var cancellationToken = new CancellationToken();
-
         var command = new UpdateAnaliseCommand(request.ClienteId, request.AnaliseId, request.Descricao, request.Nome);
         var result = await _mediator.Send(command, cancellationToken);
 
@@ -56,8 +57,6 @@ public class AnaliseController : ControllerBase
     [HttpDelete("analise/{hash}")]
     public async Task<IActionResult> Delete(Guid hash, CancellationToken cancellationToken)
     {
-        //var cancellationToken = new CancellationToken();
-
         var command = new DeletarAnaliseCommand(hash);
         var result = await _mediator.Send(command, cancellationToken);
 
@@ -73,7 +72,7 @@ public class AnaliseController : ControllerBase
         var result = await _mediator.Send(new ObterAnaliseAllServicoQuery(), cancellationToken);
 
         if (result is null)
-            return NotFound(new { message = "Analise não encontrada." });
+            return NotFound(new { message = "Analise nï¿½o encontrada." });
 
         return Ok(result);
     }

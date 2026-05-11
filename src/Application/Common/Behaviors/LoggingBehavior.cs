@@ -58,18 +58,9 @@ public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, 
 
             return response;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             stopwatch.Stop();
-
-            _logger.LogError(
-                ex,
-                "[Erro] {RequestName} | CorrelationId: {CorrelationId} | Duracao: {ElapsedMs}ms | Erro: {ErrorMessage}",
-                requestName,
-                correlationId,
-                stopwatch.ElapsedMilliseconds,
-                ex.Message);
-
             throw;
         }
     }

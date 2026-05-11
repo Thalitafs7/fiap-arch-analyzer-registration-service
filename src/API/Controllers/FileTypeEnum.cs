@@ -1,10 +1,7 @@
-﻿namespace API.Controllers
+﻿using Domain.Enums;
+
+namespace API.Controllers
 {
-    public enum FileTypeEnum
-    {
-        PDF = 1,
-        JPG = 2,
-        JPEG = 3,
-        PNG = 4
-    }
+    // FileTypeEnum renamed to FileType and moved to Domain.Enums per SonarQube S2344.
+    // This file kept for backward compatibility - use Domain.Enums.FileType directly.
 }

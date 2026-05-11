@@ -12,12 +12,12 @@ public class LogService<T> : ILogService<T>
 {
     private readonly ICorrelationIdService _correlationIdService;
     private readonly ICurrentUserService _currentUserService;
-    private readonly ILogger<T> _logger;
+    private readonly ILogger<LogService<T>> _logger;
     private readonly JsonSerializerOptions _jsonOptions;
 
     public LogService(
         ICorrelationIdService correlationIdService,
-        ILogger<T> logger,
+        ILogger<LogService<T>> logger,
         ICurrentUserService currentUserService)
     {
         _correlationIdService = correlationIdService;

@@ -41,23 +41,4 @@ public static class S3Extension
         using MemoryStream ms = new MemoryStream(file);
         await transferUtility.UploadAsync(ms, bucketName, fileName);
     }
-
-
-
-
-    //public static void AddS3(this IServiceCollection services, IConfiguration configuration)
-    //{
-    //    var s3Config = configuration.GetSection("AWS:S3");
-    //    var accessKey = s3Config["AccessKey"];
-    //    var secretKey = s3Config["SecretKey"];
-    //    var region = s3Config["Region"];
-    //    if (string.IsNullOrEmpty(accessKey) || string.IsNullOrEmpty(secretKey) || string.IsNullOrEmpty(region))
-    //    {
-    //        throw new InvalidOperationException("AWS S3 configuration is missing or incomplete.");
-    //    }
-    //    var credentials = new BasicAWSCredentials(accessKey, secretKey);
-    //    var s3Client = new AmazonS3Client(credentials, Amazon.RegionEndpoint.GetBySystemName(region));
-    //    services.AddSingleton<IAmazonS3>(s3Client);
-
-    //}
 }

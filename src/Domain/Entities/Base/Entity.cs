@@ -3,9 +3,9 @@ namespace Domain.Entities.Base;
 public abstract class Entity
 {
     public Guid Id { get; protected set; } = Guid.NewGuid();
-    public bool Ativo { get; set; } = true;
+    public bool Ativo { get; protected set; } = true;
     public DateTime DataCadastro { get; protected set; } = DateTime.UtcNow;
-    public DateTime? DataAtualizacao { get; set; }
+    public DateTime? DataAtualizacao { get; protected set; }
 
     protected void AtualizarDataModificacao()
     {
