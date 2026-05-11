@@ -1,6 +1,8 @@
 using System.Reflection;
 using Domain.Entities;
 using Domain.Entities.Base;
+using FluentAssertions;
+using InfrastructureLayer = Infrastructure;
 
 namespace UnitTests.Architecture;
 
@@ -111,7 +113,7 @@ public class CleanArchitectureExplorationTests
     public void Application_Assembly_Should_Not_Reference_AspNetCore_Http()
     {
         // Arrange
-        var applicationAssembly = typeof(Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
+        var applicationAssembly = typeof(global::Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
 
         // Act
         var referencedAssemblies = applicationAssembly.GetReferencedAssemblies();
@@ -133,7 +135,7 @@ public class CleanArchitectureExplorationTests
     public void CriarAnaliseCommand_Should_Not_Use_IFormFile()
     {
         // Arrange
-        var commandType = typeof(Application.Commands.CriarAnalise.CriarAnaliseCommand);
+        var commandType = typeof(global::Application.Commands.CriarAnalise.CriarAnaliseCommand);
 
         // Act
         var properties = commandType.GetProperties();
@@ -168,7 +170,7 @@ public class CleanArchitectureExplorationTests
     public void Queries_Namespace_Should_Not_Contain_Mutation_Handlers()
     {
         // Arrange
-        var applicationAssembly = typeof(Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
+        var applicationAssembly = typeof(global::Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
 
         // Act - Find all types in Queries namespace
         var queryTypes = applicationAssembly.GetTypes()
@@ -221,7 +223,7 @@ public class CleanArchitectureExplorationTests
     public void Queries_Namespace_Should_Not_Contain_Update_Types()
     {
         // Arrange
-        var applicationAssembly = typeof(Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
+        var applicationAssembly = typeof(global::Application.Commands.CriarAnalise.CriarAnaliseCommand).Assembly;
 
         // Act
         var updateTypesInQueries = applicationAssembly.GetTypes()
@@ -249,8 +251,8 @@ public class CleanArchitectureExplorationTests
     public void DependencyInjection_Should_Not_Have_Unused_Policy_Methods()
     {
         // Arrange
-        var infrastructureAssembly = typeof(Infrastructure.DependencyInjection).Assembly;
-        var diType = typeof(Infrastructure.DependencyInjection);
+        var infrastructureAssembly = typeof(InfrastructureLayer.DependencyInjection).Assembly;
+        var diType = typeof(InfrastructureLayer.DependencyInjection);
 
         // Act - Check if dead code methods still exist
         var getRetryPolicy = diType.GetMethod("GetRetryPolicy",
