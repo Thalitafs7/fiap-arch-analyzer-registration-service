@@ -11,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Formatting.Compact;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 
@@ -188,4 +189,8 @@ if (!app.Environment.IsEnvironment("Testing"))
 
 app.Run();
 
-public partial class Program { }
+[ExcludeFromCodeCoverage]
+public partial class Program
+{
+    private Program() { }
+}

@@ -21,11 +21,15 @@ public class DiagramaConfiguration : IEntityTypeConfiguration<Diagrama>
 
         builder.Property(e => e.AnaliseId).HasColumnName("analise_id").IsRequired();
 
-        // relação many-to-one: várias Diagramas pertencem a uma Analise
+        builder.Property(e => e.IdRelatorio)
+               .HasField("_idRelatorio")
+               .UsePropertyAccessMode(PropertyAccessMode.Field);
+
+        // relaÃ§Ã£o many-to-one: vÃ¡rias Diagramas pertencem a uma Analise
         builder.HasOne(d => d.Analise)
                .WithMany(a => a.Diagramas)
                .HasForeignKey(d => d.AnaliseId)
-               .OnDelete(DeleteBehavior.Cascade); // ou DeleteBehavior.Restrict conforme necessidade
+               .OnDelete(DeleteBehavior.Cascade);
     
         builder.HasOne(e => e.Relatorio)
                 .WithOne(r => r.Diagrama)

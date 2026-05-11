@@ -1,5 +1,5 @@
+using Application.Common.Models;
 using FluentValidation;
-using Microsoft.AspNetCore.Http;
 
 namespace Application.Commands.CriarAnalise;
 
@@ -30,11 +30,11 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
         RuleForEach(x => x.Files)
             .Must(BeAllowedFileType)
             .WithMessage("Somente arquivos com extensão .pdf, .jpeg, .png ou .docx são permitidos.")
-            .Must(file => file != null && file.Length <= MaxFileSizeBytes)
+            .Must(file => file != null && file.Content.Length <= MaxFileSizeBytes)
             .WithMessage($"Cada arquivo deve ter no máximo {MaxFileSizeBytes / (1024 * 1024)}MB.");
     }
 
-    private bool BeAllowedFileType(IFormFile? file)
+    private bool BeAllowedFileType(FileData? file)
     {
         if (file == null) return false;
 
@@ -58,5 +58,3 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
     }
 
 }
-
-

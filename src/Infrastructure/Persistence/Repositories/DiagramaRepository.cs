@@ -48,25 +48,6 @@ public class DiagramaRepository : IDiagramaRepository
             .ToListAsync(cancellationToken);
     }
 
-    public async Task<IEnumerable<Diagrama>> ObterOrcamentosExpiradosAsync(CancellationToken cancellationToken = default)
-    {
-        return await _context.Diagrama
-            .Where(o => o.DataCadastro < DateTime.UtcNow)
-            .ToListAsync(cancellationToken);
-    }
-
-    public async Task<IEnumerable<Diagrama>> ObterAguardandoAprovacaoAsync(CancellationToken cancellationToken = default)
-    {
-        return await _context.Diagrama
-            .ToListAsync(cancellationToken);
-    }
-
-    public async Task<IEnumerable<Diagrama>> ObterSagasTravadasAsync(DateTime dataLimite, CancellationToken cancellationToken = default)
-    {
-        return await _context.Diagrama
-            .ToListAsync(cancellationToken);
-    }
-
     public async Task AdicionarAsync(Diagrama entity, CancellationToken cancellationToken = default)
     {
         await _context.Diagrama.AddAsync(entity, cancellationToken);

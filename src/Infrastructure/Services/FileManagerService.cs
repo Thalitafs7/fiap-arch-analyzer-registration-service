@@ -1,18 +1,18 @@
 using Amazon.S3;
 using Application.Common.Interfaces;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Services;
 
 public class FileManagerService : IFileManagerService
 {
-    private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly IAmazonS3 _s3Client;
+    private readonly string _bucketName;
 
-    public FileManagerService(IHttpContextAccessor httpContextAccessor, IAmazonS3 amazonS3)
+    public FileManagerService(IAmazonS3 amazonS3, IConfiguration configuration)
     {
-        _httpContextAccessor = httpContextAccessor;
         _s3Client = amazonS3;
+        _bucketName = configuration["AWS:S3:BucketName"] ?? throw new InvalidOperationException("AWS:S3:BucketName not configured.");
     }
 
     public Task<int> CountFileByPrefix(string prefix)
@@ -22,6 +22,6 @@ public class FileManagerService : IFileManagerService
 
     public async Task UploadAsync(string fileKey, byte[] fileBytes)
     {
-        await _s3Client.Upload("BuckerName", fileBytes, fileKey);
+        await _s3Client.Upload(_bucketName, fileBytes, fileKey);
     }
 }

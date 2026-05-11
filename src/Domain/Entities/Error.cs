@@ -1,22 +1,28 @@
 using Domain.Entities.Base;
 
 namespace Domain.Entities;
+
 public class Error : Entity
 {
-    public Guid Id { get; private set; }
-    public string? Tipo { get; set; }
+    public string? Tipo { get; private set; }
     public string Descricao { get; private set; } = default!;
-    public DateTime DataCadastro { get; private set; }
 
+    protected Error() { }
 
-    private Error() { }
+    public Error(string tipo, string descricao)
+    {
+        Tipo = tipo;
+        Descricao = descricao;
+    }
 
-
+    /// <summary>
+    /// Backward-compatible constructor. The id parameter is ignored since Entity base generates Id automatically.
+    /// Will be removed when handlers migrate to ExceptionHandlingBehavior (task 3.5).
+    /// </summary>
     public Error(Guid id, string tipo, string descricao)
     {
         Id = id;
         Tipo = tipo;
         Descricao = descricao;
-        DataCadastro = DateTime.UtcNow;
     }
 }

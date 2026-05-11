@@ -34,7 +34,7 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
 
             var analise = _analiseRepository.ObterPorIdAsync(command.Id).Result;
             if (analise == null)
-                throw new Exception("Análise não encontrada.");
+                throw new Exception("Anï¿½lise nï¿½o encontrada.");
 
             AtualizarAnalise(command, analise);
 
@@ -70,7 +70,7 @@ public class UpdateAnaliseHandler : HandlerBase<UpdateAnaliseHandler>, IRequestH
 
     private static void AtualizarAnalise(UpdateAnaliseCommand command, Analise analise)
     {
-        analise.Nome = command.Nome;
-        analise.Descricao = command.Descricao;
+        analise.AlterarNome(command.Nome);
+        analise.AlterarDescricao(command.Descricao);
     }
 }
