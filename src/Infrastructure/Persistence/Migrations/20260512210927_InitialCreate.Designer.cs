@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(OrdensDbContext))]
-    [Migration("20260426014201_InitialCreate")]
+    [Migration("20260512210927_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -36,6 +36,9 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("ativo");
 
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uuid");
+
                     b.Property<DateTime?>("DataAtualizacao")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("data_atualizacao");
@@ -44,14 +47,18 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("data_cadastro");
 
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("descricao");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("nome");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text")
+                    b.Property<int>("Status")
+                        .HasColumnType("integer")
                         .HasColumnName("status");
 
                     b.HasKey("Id");
@@ -66,8 +73,9 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("id");
 
-                    b.Property<Guid?>("AnaliseId")
-                        .HasColumnType("uuid");
+                    b.Property<Guid>("AnaliseId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("analise_id");
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("boolean")
@@ -104,8 +112,7 @@ namespace Infrastructure.Persistence.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
+                        .HasColumnType("uuid");
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("boolean")
@@ -121,10 +128,12 @@ namespace Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("descricao");
 
                     b.Property<string>("Tipo")
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("tipo");
 
                     b.HasKey("Id");
 
@@ -142,6 +151,10 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("ativo");
 
+                    b.Property<string>("Componentes_Identificado")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("componentes_identificado");
+
                     b.Property<DateTime?>("DataAtualizacao")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("data_atualizacao");
@@ -150,21 +163,31 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("data_cadastro");
 
-                    b.Property<Guid>("DiagramaId")
-                        .HasColumnType("uuid");
-
                     b.Property<Guid?>("IdDiagrama")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uuid")
+                        .HasColumnName("id_diagrama");
+
+                    b.Property<string>("Message_Error")
+                        .HasColumnType("text")
+                        .HasColumnName("message_error");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("nome");
 
-                    b.Property<string>("URLS3Relatorio")
-                        .HasColumnType("text");
+                    b.Property<string>("Recomendacao")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("recomendacao");
+
+                    b.Property<string>("Risco_Arquitetura")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("risco_arquitetura");
+
+                    b.Property<Guid?>("Soat_Analysis_Id")
+                        .HasColumnType("uuid")
+                        .HasColumnName("soat_analysis_id");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DiagramaId");
 
                     b.HasIndex("IdDiagrama")
                         .IsUnique();
@@ -174,20 +197,18 @@ namespace Infrastructure.Persistence.Migrations
 
             modelBuilder.Entity("Domain.Entities.Diagrama", b =>
                 {
-                    b.HasOne("Domain.Entities.Analise", null)
+                    b.HasOne("Domain.Entities.Analise", "Analise")
                         .WithMany("Diagramas")
-                        .HasForeignKey("AnaliseId");
+                        .HasForeignKey("AnaliseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Analise");
                 });
 
             modelBuilder.Entity("Domain.Entities.Relatorio", b =>
                 {
                     b.HasOne("Domain.Entities.Diagrama", "Diagrama")
-                        .WithMany()
-                        .HasForeignKey("DiagramaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Diagrama", null)
                         .WithOne("Relatorio")
                         .HasForeignKey("Domain.Entities.Relatorio", "IdDiagrama");
 

@@ -1,274 +1,262 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\",
+  "WorkspaceRootPath": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\webhookiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\webhookiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\updateanaliseservico\\updateanaliseservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\updateanaliseservico\\updateanaliseservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\updateanaliseservico\\updateanaliseservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\updateanaliseservico\\updateanaliseservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\analiserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\analiserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\analisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\analisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\updateanaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\updateanaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\criaranaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\criaranaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\diagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\diagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\relatorioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\relatorioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\mappings\\analiseservicomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\mappings\\analiseservicomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\dtos\\relatoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\relatoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\dtos\\diagramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\diagramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\enums\\statusanaliseenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\enums\\statusanaliseenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\filetypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\filetypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\idiagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\idiagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\diagramaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\diagramaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\diagrama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\diagrama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\criarrelatoriorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\criarrelatoriorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\analise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\analise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obtertodasordens\\obtertodasordenshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obtertodasordens\\obtertodasordenshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obtertodasordens\\obtertodasordensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obtertodasordens\\obtertodasordensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\errorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\errorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\ierrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\ierrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\errorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\errorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\ianaliserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\ianaliserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\base\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\base\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\irelatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\irelatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\analiseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\analiseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\externalservices\\sagasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\externalservices\\sagasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\healthchecks\\healthcheckresponsewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\healthchecks\\healthcheckresponsewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\ordensdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\ordensdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\20260426014201_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\20260426014201_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\20260430011114_updatemap_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\20260430011114_updatemap_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\20260503183458_update_analise_error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\20260503183458_update_analise_error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\branch2504\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\20260510005629_atualizarelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\20260510005629_atualizarelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\analisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\analisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\errorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\errorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\ordensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\ordensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criaranalise\\criaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criaranalise\\criaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\migrations\\20260512210927_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\migrations\\20260512210927_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\analise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\analise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseallservico\\obteranaliseallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\webhookiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\webhookiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\relatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\analiserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\analiserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioservico\\obterrelatorioservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\updateanaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\updateanaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\criaranaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\criaranaliserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\repositories\\diagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\repositories\\diagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\relatorioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\relatorioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\mappings\\analiseservicomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\mappings\\analiseservicomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\dtos\\relatoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\relatoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\dtos\\diagramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\diagramadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\filetypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\filetypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\criarrelatorio\\criarrelatoriocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\criarrelatorio\\criarrelatoriocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\idiagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\idiagramarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\diagramaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\diagramaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\diagrama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\diagrama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\controllers\\criarrelatoriorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\controllers\\criarrelatoriorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obterrelatorioallservico\\obterrelatorioallservicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obtertodasordens\\obtertodasordenshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obtertodasordens\\obtertodasordenshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obtertodasordens\\obtertodasordensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obtertodasordens\\obtertodasordensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\ierrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\ierrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\errorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\errorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\queries\\obteranaliseservicoporid\\obteranaliseservicoporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\deletaranalise\\deletaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\deletaranalise\\deletaranalisecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\ianaliserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\ianaliserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\entities\\base\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\base\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\domain\\interfaces\\irelatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\interfaces\\irelatoriorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\persistence\\configurations\\analiseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\persistence\\configurations\\analiseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\application\\commands\\updateanalise\\updateanalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-4B6C-9D0E-1F2A3B4C5D6E}|src\\Application\\Application.csproj|solutionrelative:src\\application\\commands\\updateanalise\\updateanalisevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\externalservices\\sagasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\externalservices\\sagasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\healthchecks\\healthcheckresponsewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\healthchecks\\healthcheckresponsewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C7D-8E9F-0A1B2C3D4E5F}|src\\Infrastructure\\Infrastructure.csproj|solutionrelative:src\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|c:\\projetos\\fiap_posttech\\sistemas\\5fase\\main3-1205\\fiap-arch-analyzer-registration-service\\src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3C41485D-5BA7-48DB-98E0-C8B1BAEB51CB}|src\\API\\API.csproj|solutionrelative:src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Enums\\StatusAnaliseEnum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -278,81 +266,207 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ObterAnaliseAllServicoHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
-              "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CriarAnaliseValidator.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T12:36:57.755Z",
+              "WhenOpened": "2026-05-03T11:23:51.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ObterAnaliseAllServicoQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
-              "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CriarAnaliseHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAIA5wDQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T12:36:41.22Z",
+              "WhenOpened": "2026-04-26T01:48:45.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAApwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T00:51:37.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeletarAnaliseHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwBEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T13:14:37.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UpdateAnaliseServicoQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
-              "RelativeToolTip": "src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAOAAAAAAAAAA==",
+              "Title": "ErrorRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T12:14:22.752Z"
+              "WhenOpened": "2026-05-03T18:24:22.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateAnaliseServicoHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
-              "RelativeToolTip": "src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UpdateAnaliseHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAApwEQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T12:13:20.669Z"
+              "WhenOpened": "2026-05-03T11:37:20.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\API\\appsettings.json",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\appsettings.json",
+              "RelativeToolTip": "src\\API\\appsettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-26T00:07:18.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnaliseController.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\AnaliseController.cs",
+              "RelativeDocumentMoniker": "src\\API\\Controllers\\AnaliseController.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\AnaliseController.cs",
+              "RelativeToolTip": "src\\API\\Controllers\\AnaliseController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T01:48:07.094Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CriarRelatorioHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvzQAAABPAAAAAAAAAA==",
+              "Title": "OrdensDbContext.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\OrdensDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\OrdensDbContext.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\OrdensDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Persistence\\OrdensDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T11:19:49.038Z"
+              "WhenOpened": "2026-05-12T20:38:37.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "20260512210927_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260512210927_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260512210927_InitialCreate.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260512210927_InitialCreate.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260512210927_InitialCreate.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAYwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T21:09:27.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ObterAnaliseAllServicoHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
+              "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T12:36:57.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260512204351_gerandomigrationaposrefactor.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260512204351_gerandomigrationaposrefactor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T20:43:51.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CriarAnaliseCommand.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T11:24:19.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\API\\Program.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Program.cs",
+              "RelativeToolTip": "src\\API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T00:07:15.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Analise.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Analise.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Entities\\Analise.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Analise.cs",
+              "RelativeToolTip": "src\\Domain\\Entities\\Analise.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T01:23:15.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "AnaliseRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Repositories\\AnaliseRepository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -360,24 +474,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
               "Title": "WebhookIAController.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\WebhookIAController.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\WebhookIAController.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\WebhookIAController.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\WebhookIAController.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\WebhookIAController.cs",
               "RelativeToolTip": "src\\API\\Controllers\\WebhookIAController.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAMwDwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T20:46:54.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T20:46:54.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
+              "Title": "CriarRelatorioHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
+              "RelativeToolTip": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioHandler.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvzQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T11:19:49.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Relatorio.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Relatorio.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\Entities\\Relatorio.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Relatorio.cs",
+              "RelativeToolTip": "src\\Domain\\Entities\\Relatorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T20:11:41.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "UpdateAnaliseServicoHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
+              "RelativeDocumentMoniker": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
+              "RelativeToolTip": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T12:13:20.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "UpdateAnaliseServicoQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
+              "RelativeToolTip": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\UpdateAnaliseServico\\UpdateAnaliseServicoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T12:14:22.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ObterAnaliseAllServicoQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
+              "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseAllServico\\ObterAnaliseAllServicoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T12:36:41.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "ObterRelatorioServicoHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoHandler.cs",
               "ViewState": "AgIAABMAAAAAAAAAAIAwwB0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -385,11 +558,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "RelatorioRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Repositories\\RelatorioRepository.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAqwC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -397,11 +570,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "src\\Domain\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -409,11 +582,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "CriarRelatorioValidator.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
               "RelativeToolTip": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -421,11 +594,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "ObterRelatorioAllServicoHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoHandler.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -433,23 +606,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UpdateAnaliseHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseHandler.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAlwD0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T11:37:20.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "ObterRelatorioServicoQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterRelatorioServico\\ObterRelatorioServicoQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -457,11 +618,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "UpdateAnaliseCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
               "RelativeToolTip": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -469,23 +630,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AnaliseController.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\AnaliseController.cs",
-              "RelativeDocumentMoniker": "src\\API\\Controllers\\AnaliseController.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\AnaliseController.cs",
-              "RelativeToolTip": "src\\API\\Controllers\\AnaliseController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAASwDQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:48:07.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "UpdateAnaliseRequest.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\UpdateAnaliseRequest.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\UpdateAnaliseRequest.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\UpdateAnaliseRequest.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\UpdateAnaliseRequest.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\UpdateAnaliseRequest.cs",
               "RelativeToolTip": "src\\API\\Controllers\\UpdateAnaliseRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -493,35 +642,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "20260510005629_atualizarelatorio.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260510005629_atualizarelatorio.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260510005629_atualizarelatorio.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260510005629_atualizarelatorio.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260510005629_atualizarelatorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T00:56:30.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\API\\Program.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Program.cs",
-              "RelativeToolTip": "src\\API\\Program.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAcwKIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T00:07:15.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "DiagramaDto.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\DiagramaDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\DiagramaDto.cs",
               "RelativeDocumentMoniker": "src\\Application\\DTOs\\DiagramaDto.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\DiagramaDto.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\DiagramaDto.cs",
               "RelativeToolTip": "src\\Application\\DTOs\\DiagramaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -529,35 +654,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CriarAnaliseHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseHandler.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAApwDoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:48:45.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CriarAnaliseCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T11:24:19.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "CriarAnaliseRequest.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarAnaliseRequest.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarAnaliseRequest.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\CriarAnaliseRequest.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarAnaliseRequest.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarAnaliseRequest.cs",
               "RelativeToolTip": "src\\API\\Controllers\\CriarAnaliseRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -565,11 +666,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "RelatorioController.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\RelatorioController.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\RelatorioController.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\RelatorioController.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\RelatorioController.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\RelatorioController.cs",
               "RelativeToolTip": "src\\API\\Controllers\\RelatorioController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAlwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -577,11 +678,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "DiagramaRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Repositories\\DiagramaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -589,11 +690,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "RelatorioConfiguration.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Configurations\\RelatorioConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -601,11 +702,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "AnaliseServicoMappings.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Mappings\\AnaliseServicoMappings.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Mappings\\AnaliseServicoMappings.cs",
               "RelativeDocumentMoniker": "src\\Application\\Mappings\\AnaliseServicoMappings.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Mappings\\AnaliseServicoMappings.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Mappings\\AnaliseServicoMappings.cs",
               "RelativeToolTip": "src\\Application\\Mappings\\AnaliseServicoMappings.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAnwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -613,11 +714,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "RelatorioDto.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\RelatorioDto.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\RelatorioDto.cs",
               "RelativeDocumentMoniker": "src\\Application\\DTOs\\RelatorioDto.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\RelatorioDto.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\DTOs\\RelatorioDto.cs",
               "RelativeToolTip": "src\\Application\\DTOs\\RelatorioDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -625,23 +726,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 64,
               "Title": "StatusAnaliseEnum.cs",
               "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Enums\\StatusAnaliseEnum.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\Enums\\StatusAnaliseEnum.cs",
+              "RelativeDocumentMoniker": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Enums\\StatusAnaliseEnum.cs",
               "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Enums\\StatusAnaliseEnum.cs",
-              "RelativeToolTip": "src\\Domain\\Enums\\StatusAnaliseEnum.cs",
+              "RelativeToolTip": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Enums\\StatusAnaliseEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T20:30:09.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "CriarRelatorioCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
               "RelativeToolTip": "src\\Application\\Commands\\CriarRelatorio\\CriarRelatorioCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -649,11 +750,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "IDiagramaRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IDiagramaRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IDiagramaRepository.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Interfaces\\IDiagramaRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IDiagramaRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IDiagramaRepository.cs",
               "RelativeToolTip": "src\\Domain\\Interfaces\\IDiagramaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -661,11 +762,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "FileTypeEnum.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\FileTypeEnum.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\FileTypeEnum.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\FileTypeEnum.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\FileTypeEnum.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\FileTypeEnum.cs",
               "RelativeToolTip": "src\\API\\Controllers\\FileTypeEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -673,11 +774,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "DiagramaConfiguration.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Configurations\\DiagramaConfiguration.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBUAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -685,11 +786,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "Diagrama.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Diagrama.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Diagrama.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Entities\\Diagrama.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Diagrama.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Diagrama.cs",
               "RelativeToolTip": "src\\Domain\\Entities\\Diagrama.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -697,23 +798,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Relatorio.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Relatorio.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\Entities\\Relatorio.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Relatorio.cs",
-              "RelativeToolTip": "src\\Domain\\Entities\\Relatorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T20:11:41.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "CriarRelatorioRequest.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarRelatorioRequest.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarRelatorioRequest.cs",
               "RelativeDocumentMoniker": "src\\API\\Controllers\\CriarRelatorioRequest.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarRelatorioRequest.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Controllers\\CriarRelatorioRequest.cs",
               "RelativeToolTip": "src\\API\\Controllers\\CriarRelatorioRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -721,35 +810,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CriarAnaliseValidator.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\CriarAnalise\\CriarAnaliseValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T11:23:51.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "DeletarAnaliseHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
-              "RelativeToolTip": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T13:14:37.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "ObterRelatorioAllServicoQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterRelatorioAllServico\\ObterRelatorioAllServicoQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -757,23 +822,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Analise.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Analise.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\Entities\\Analise.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Analise.cs",
-              "RelativeToolTip": "src\\Domain\\Entities\\Analise.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T01:23:15.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "ObterTodasOrdensHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensHandler.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -781,11 +834,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "ObterTodasOrdensQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterTodasOrdens\\ObterTodasOrdensQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -793,11 +846,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Error.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Error.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Error.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Entities\\Error.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Error.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Error.cs",
               "RelativeToolTip": "src\\Domain\\Entities\\Error.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -805,47 +858,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "20260503183458_update_analise_error.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260503183458_update_analise_error.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260503183458_update_analise_error.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260503183458_update_analise_error.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260503183458_update_analise_error.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T18:34:58.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAQwD8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T00:51:37.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ErrorRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Repositories\\ErrorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T18:24:22.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "IErrorRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IErrorRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IErrorRepository.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Interfaces\\IErrorRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IErrorRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IErrorRepository.cs",
               "RelativeToolTip": "src\\Domain\\Interfaces\\IErrorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -853,11 +870,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ErrorConfiguration.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Configurations\\ErrorConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -865,11 +882,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "DeletarAnaliseValidator.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
               "RelativeToolTip": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -877,11 +894,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ObterAnaliseServicoPorIdHandler.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdHandler.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -889,11 +906,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "ObterAnaliseServicoPorIdQuery.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
               "RelativeDocumentMoniker": "src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
               "RelativeToolTip": "src\\Application\\Queries\\ObterAnaliseServicoPorId\\ObterAnaliseServicoPorIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -901,11 +918,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "DeletarAnaliseCommand.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
               "RelativeToolTip": "src\\Application\\Commands\\DeletarAnalise\\DeletarAnaliseCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -913,11 +930,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "IAnaliseRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IAnaliseRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IAnaliseRepository.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Interfaces\\IAnaliseRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IAnaliseRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IAnaliseRepository.cs",
               "RelativeToolTip": "src\\Domain\\Interfaces\\IAnaliseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -925,11 +942,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Base\\Entity.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Base\\Entity.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Entities\\Base\\Entity.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Base\\Entity.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Entities\\Base\\Entity.cs",
               "RelativeToolTip": "src\\Domain\\Entities\\Base\\Entity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -937,11 +954,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "IRelatorioRepository.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRelatorioRepository.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRelatorioRepository.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Interfaces\\IRelatorioRepository.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRelatorioRepository.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Domain\\Interfaces\\IRelatorioRepository.cs",
               "RelativeToolTip": "src\\Domain\\Interfaces\\IRelatorioRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -949,11 +966,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "UpdateAnaliseValidator.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
               "RelativeDocumentMoniker": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
               "RelativeToolTip": "src\\Application\\Commands\\UpdateAnalise\\UpdateAnaliseValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -961,11 +978,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "AnaliseConfiguration.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistence\\Configurations\\AnaliseConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -973,35 +990,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "20260430011114_updatemap_relatorio.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260430011114_updatemap_relatorio.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260430011114_updatemap_relatorio.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260430011114_updatemap_relatorio.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260430011114_updatemap_relatorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T01:11:14.679Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 58,
-              "Title": "OrdensDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\OrdensDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\OrdensDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\OrdensDbContextModelSnapshot.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\OrdensDbContextModelSnapshot.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:42:10.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
               "Title": "CorrelationIdMiddleware.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
               "RelativeDocumentMoniker": "src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
               "RelativeToolTip": "src\\API\\Middlewares\\CorrelationIdMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1009,11 +1002,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "HealthCheckResponseWriter.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
               "RelativeDocumentMoniker": "src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
               "RelativeToolTip": "src\\API\\HealthChecks\\HealthCheckResponseWriter.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1021,11 +1014,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "SagaSettings.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
               "RelativeToolTip": "src\\Infrastructure\\ExternalServices\\SagaSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1036,32 +1029,20 @@
               "DocumentIndex": 59,
               "Title": "20260426013111_InitialCreate.cs",
               "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
               "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
+              "RelativeToolTip": "..\\..\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426013111_InitialCreate.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-26T01:31:11.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "20260426014201_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426014201_InitialCreate.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Persistence\\Migrations\\20260426014201_InitialCreate.cs",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Persistence\\Migrations\\20260426014201_InitialCreate.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistence\\Migrations\\20260426014201_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T01:42:01.551Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 61,
               "Title": "API.csproj",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
               "RelativeDocumentMoniker": "src\\API\\API.csproj",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\API\\API.csproj",
               "RelativeToolTip": "src\\API\\API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -1071,25 +1052,13 @@
               "$type": "Document",
               "DocumentIndex": 60,
               "Title": "Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Main3-1205\\fiap-arch-analyzer-registration-service\\src\\Infrastructure\\Infrastructure.csproj",
               "RelativeToolTip": "src\\Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-04-26T00:52:33.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\API\\appsettings.json",
-              "ToolTip": "C:\\Projetos\\FIAP_PostTech\\Sistemas\\5FASE\\Branch2504\\fiap-arch-analyzer-registration-service\\src\\API\\appsettings.json",
-              "RelativeToolTip": "src\\API\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowAkAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-26T00:07:18.576Z"
             }
           ]
         }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -15,8 +16,10 @@ namespace Infrastructure.Persistence.Migrations
                 columns: table => new
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
+                    ClienteId = table.Column<Guid>(type: "uuid", nullable: false),
                     nome = table.Column<string>(type: "text", nullable: false),
-                    status = table.Column<string>(type: "text", nullable: false),
+                    status = table.Column<int>(type: "integer", nullable: false),
+                    descricao = table.Column<string>(type: "text", nullable: false),
                     ativo = table.Column<bool>(type: "boolean", nullable: false),
                     data_cadastro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     data_atualizacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -30,16 +33,16 @@ namespace Infrastructure.Persistence.Migrations
                 name: "error",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Tipo = table.Column<string>(type: "text", nullable: true),
-                    Descricao = table.Column<string>(type: "text", nullable: false),
-                    data_cadastro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    tipo = table.Column<string>(type: "text", nullable: true),
+                    descricao = table.Column<string>(type: "text", nullable: false),
                     ativo = table.Column<bool>(type: "boolean", nullable: false),
+                    data_cadastro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     data_atualizacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_error", x => x.id);
+                    table.PrimaryKey("PK_error", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -51,7 +54,7 @@ namespace Infrastructure.Persistence.Migrations
                     TipoDiagrama = table.Column<string>(type: "text", nullable: true),
                     URLS3Diagrama = table.Column<string>(type: "text", nullable: true),
                     IdRelatorio = table.Column<Guid>(type: "uuid", nullable: false),
-                    AnaliseId = table.Column<Guid>(type: "uuid", nullable: true),
+                    analise_id = table.Column<Guid>(type: "uuid", nullable: false),
                     ativo = table.Column<bool>(type: "boolean", nullable: false),
                     data_cadastro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     data_atualizacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -60,10 +63,11 @@ namespace Infrastructure.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_diagrama", x => x.id);
                     table.ForeignKey(
-                        name: "FK_diagrama_analise_AnaliseId",
-                        column: x => x.AnaliseId,
+                        name: "FK_diagrama_analise_analise_id",
+                        column: x => x.analise_id,
                         principalTable: "analise",
-                        principalColumn: "id");
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -71,10 +75,13 @@ namespace Infrastructure.Persistence.Migrations
                 columns: table => new
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Nome = table.Column<string>(type: "text", nullable: true),
-                    URLS3Relatorio = table.Column<string>(type: "text", nullable: true),
-                    DiagramaId = table.Column<Guid>(type: "uuid", nullable: false),
-                    IdDiagrama = table.Column<Guid>(type: "uuid", nullable: true),
+                    nome = table.Column<string>(type: "text", nullable: true),
+                    soat_analysis_id = table.Column<Guid>(type: "uuid", nullable: true),
+                    id_diagrama = table.Column<Guid>(type: "uuid", nullable: true),
+                    componentes_identificado = table.Column<string>(type: "jsonb", nullable: true),
+                    risco_arquitetura = table.Column<string>(type: "jsonb", nullable: true),
+                    recomendacao = table.Column<string>(type: "jsonb", nullable: true),
+                    message_error = table.Column<string>(type: "text", nullable: true),
                     ativo = table.Column<bool>(type: "boolean", nullable: false),
                     data_cadastro = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     data_atualizacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -83,32 +90,21 @@ namespace Infrastructure.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_relatorio", x => x.id);
                     table.ForeignKey(
-                        name: "FK_relatorio_diagrama_DiagramaId",
-                        column: x => x.DiagramaId,
-                        principalTable: "diagrama",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_relatorio_diagrama_IdDiagrama",
-                        column: x => x.IdDiagrama,
+                        name: "FK_relatorio_diagrama_id_diagrama",
+                        column: x => x.id_diagrama,
                         principalTable: "diagrama",
                         principalColumn: "id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_diagrama_AnaliseId",
+                name: "IX_diagrama_analise_id",
                 table: "diagrama",
-                column: "AnaliseId");
+                column: "analise_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_relatorio_DiagramaId",
+                name: "IX_relatorio_id_diagrama",
                 table: "relatorio",
-                column: "DiagramaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_relatorio_IdDiagrama",
-                table: "relatorio",
-                column: "IdDiagrama",
+                column: "id_diagrama",
                 unique: true);
         }
 
