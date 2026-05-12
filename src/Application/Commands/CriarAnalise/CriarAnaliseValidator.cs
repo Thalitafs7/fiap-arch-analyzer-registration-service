@@ -16,10 +16,7 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
         RuleFor(x => x.Nome)
             .NotEmpty()
             .WithMessage("Nome da analise é obrigatório");
-
-        RuleFor(x => x.FileType)
-            .NotEmpty()
-            .WithMessage("Tipo de arquivo é obrigátorio");
+        
 
         RuleFor(x => x.Descricao)
             .MaximumLength(1000)
