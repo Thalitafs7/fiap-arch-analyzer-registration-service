@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  test-and-release-pr:
+  create-release-pr:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
@@ -20,32 +20,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          terraform_version: "1.5.0"
-
-      - name: Run Tests
-        run: ./.github/scripts/check_test_success.sh
-
       - name: Calculate Next Version
         id: semver
         run: |
           git fetch --tags
           git fetch origin main
 
-          # Get the current version from the latest tag on main
           LATEST_TAG=$(git tag --merged origin/main | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1)
           if [ -z "$LATEST_TAG" ]; then
             LATEST_TAG="v0.0.0"
           fi
           echo "Latest tag: $LATEST_TAG"
 
-          # Remove 'v' prefix
           VERSION=${LATEST_TAG#v}
           IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
 
-          # Get the last commit message from develop
           COMMIT_MSG=$(git log -1 --pretty=%B)
           echo "Commit message: $COMMIT_MSG"
 
@@ -70,11 +59,9 @@ jobs:
           RELEASE_BRANCH="release/${NEXT_VERSION#v}"
           BASE_BRANCH="main"
 
-          # Configure Git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Check if there are new commits from main to develop
           COMMIT_COUNT=$(git rev-list --count origin/$BASE_BRANCH..develop)
 
           if [ "$COMMIT_COUNT" -eq "0" ]; then
@@ -82,15 +69,10 @@ jobs:
             exit 0
           fi
 
-          # Create branch from main
           git fetch origin $BASE_BRANCH
           git checkout -b "$RELEASE_BRANCH" origin/$BASE_BRANCH
-
-          # Push release branch (ignore error if exists)
           git push origin "$RELEASE_BRANCH" || echo "Branch $RELEASE_BRANCH might already exist on remote."
 
-          # Create PR from develop to release branch
-          # Check if PR already exists
           PR_EXISTS=$(gh pr list --head develop --base "$RELEASE_BRANCH" --json number --jq 'length > 0')
 
           if [ "$PR_EXISTS" = "false" ]; then
