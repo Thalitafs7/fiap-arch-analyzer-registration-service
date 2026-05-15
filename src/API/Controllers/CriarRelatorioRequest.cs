@@ -6,7 +6,7 @@ namespace API.Controllers;
 public record CriarRelatorioRequest
 {
     [JsonPropertyName("analysis_id")]
-    public required Guid AnalysisId { get; init; }
+    public Guid AnalysisId { get; init; }
 
     [JsonPropertyName("soat_analysis_id")]
     public Guid? Soat_analysis_id { get; init; }
@@ -19,6 +19,12 @@ public record CriarRelatorioRequest
 
     [JsonPropertyName("error_message")]
     public string? ErrorMessage { get; init; }
+
+    [JsonPropertyName("error_step")]
+    public string? ErrorStep { get; init; }
+
+    [JsonPropertyName("error_type")]
+    public string? ErrorType { get; init; }
 
     [JsonPropertyName("completed_at")]
     public DateTimeOffset? CompletedAt { get; init; }

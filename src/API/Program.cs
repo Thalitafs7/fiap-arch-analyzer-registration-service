@@ -19,12 +19,6 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 
-var awsOptions = builder.Configuration.GetAWSOptions();
-builder.Services.AddDefaultAWSOptions(awsOptions);
-builder.Services.AddAWSService<Amazon.S3.IAmazonS3>();
-builder.Services.AddAWSService<Amazon.SQS.IAmazonSQS>();
-
-
 #region Serilog
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()

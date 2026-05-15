@@ -10,14 +10,10 @@ public class CriarRelatorioValidator : AbstractValidator<CriarRelatorioCommand>
             .NotEmpty()
             .WithMessage("Id Analise é obrigatório.");
 
-        RuleFor(x => x.Report.ExecutiveSummary)
+        RuleFor(x => x.Report!.ExecutiveSummary)
             .NotEmpty()
-            .WithMessage("Nome da analise é obrigatório");
-
-        RuleFor(x => x.Report)
-            .NotEmpty()
-            .WithMessage("Relátorio é obrigátorio");
-
+            .WithMessage("Nome da analise é obrigatório")
+            .When(x => x.Report != null);
     }
 }
 

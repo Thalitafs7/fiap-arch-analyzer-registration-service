@@ -45,14 +45,25 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         var diagrama = await _diagramaRepository.ObterPorAnaliseAsync(analise.Id)
             ?? throw new Exception("Diagrama não existe para a analise.");
 
+        var risks = command.Report?.ArchitecturalRisks?
+            .Select(r => r.ToString())
+            .ToList() ?? new List<string>();
+
+        var nome = string.IsNullOrWhiteSpace(command.Report?.ExecutiveSummary)
+            ? "Relatório gerado"
+            : command.Report.ExecutiveSummary;
+
         // AnalysisId = ID interno do processing-service (armazenado para referência cruzada)
         var relatorio = new Relatorio(
-            command.Report?.ExecutiveSummary,
+            nome,
             command.AnalysisId,
             diagrama.Id,
-            command.Report?.ComponentsIdentified,
-            command.Report?.ArchitecturalRisks,
-            command.Report?.Recommendations);
+            command.Report?.ComponentsIdentified ?? new List<string>(),
+            risks,
+            command.Report?.Recommendations ?? new List<string>(),
+            errorMessage: command.ErrorMessage,
+            errorStep: command.ErrorStep,
+            errorType: command.ErrorType);
 
         await _relatorioRepository.AdicionarAsync(relatorio, cancellationToken);
         await AtualizarStatusAnalise(analise, command.Status ?? string.Empty, cancellationToken);

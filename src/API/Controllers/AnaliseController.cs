@@ -3,6 +3,7 @@ using Application.Commands.DeletarAnalise;
 using Application.Commands.UpdateAnalise;
 using Application.Common.Models;
 using Application.Queries.ObterAnaliseAllServico;
+using Application.Queries.ObterAnaliseServicoPorId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -61,6 +62,18 @@ public class AnaliseController : ControllerBase
         var result = await _mediator.Send(command, cancellationToken);
 
         _logger.LogInformation("Analise deletada com sucesso", result.Id, result.Nome);
+        return Ok(result);
+    }
+
+
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
+    {
+        var result = await _mediator.Send(new ObterAnaliseServicoPorIdQuery(id), cancellationToken);
+
+        if (result is null)
+            return NotFound(new { message = "Analise não encontrada." });
+
         return Ok(result);
     }
 

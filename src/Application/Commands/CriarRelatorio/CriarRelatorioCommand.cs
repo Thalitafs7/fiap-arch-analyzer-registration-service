@@ -10,6 +10,8 @@ public record CriarRelatorioCommand(
     string? Status,
     ReportDetail? Report,
     string? ErrorMessage,
+    string? ErrorStep,
+    string? ErrorType,
     DateTimeOffset? CompletedAt
 ) : IRequest<RelatorioDto>;
 
@@ -19,7 +21,7 @@ public record ReportDetail
     public List<string>? ComponentsIdentified { get; set; }
 
     [JsonPropertyName("architectural_risks")]
-    public List<string>? ArchitecturalRisks { get; set; }
+    public List<ArchitecturalRiskDetail>? ArchitecturalRisks { get; set; }
 
     [JsonPropertyName("recommendations")]
     public List<string>? Recommendations { get; set; }
@@ -29,4 +31,25 @@ public record ReportDetail
 
     [JsonPropertyName("rag_used")]
     public bool RagUsed { get; set; }
+}
+
+public record ArchitecturalRiskDetail
+{
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    [JsonPropertyName("severity")]
+    public string? Severity { get; set; }
+
+    [JsonPropertyName("affected_components")]
+    public List<string>? AffectedComponents { get; set; }
+
+    [JsonPropertyName("mitigation")]
+    public string? Mitigation { get; set; }
+
+    public override string ToString() =>
+        $"[{Severity}] {Type}: {Description} — Mitigação: {Mitigation}";
 }

@@ -7,22 +7,18 @@ using Domain.Entities;
 using Domain.Enums;
 using Domain.Interfaces;
 using MediatR;
-using System.Text.Json;
-
 namespace Application.Commands.CriarAnalise;
 
 public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHandler<CriarAnaliseCommand, AnaliseDto>
 {
     private readonly IAnaliseRepository _analiseRepository;
     private readonly IFileManagerService _fileManagerService;
-    private readonly ISQSManagerService _sQSManagerService;
     private readonly IRabbitMQDiagramPublisher _rabbitPublisher;
     private readonly IRegistrationSettings _settings;
 
     public CriarAnaliseHandler(
         IAnaliseRepository analiseRepository,
         IFileManagerService fileManagerService,
-        ISQSManagerService sQSManagerService,
         IRabbitMQDiagramPublisher rabbitPublisher,
         IRegistrationSettings settings,
         IUnitOfWork unitOfWork,
@@ -31,7 +27,6 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
     {
         _analiseRepository = analiseRepository;
         _fileManagerService = fileManagerService;
-        _sQSManagerService = sQSManagerService;
         _rabbitPublisher = rabbitPublisher;
         _settings = settings;
     }
@@ -51,19 +46,18 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
             diagramas,
             command.Descricao);
 
-        // Upload para S3 (opcional — não bloqueia se S3 não estiver configurado)
         foreach (var item in command.Files)
         {
-            string s3Key = $"analises/{analise.Id}/diagramas/{item.FileName}";
+            string fileKey = $"analises/{analise.Id}/diagramas/{item.FileName}";
             try
             {
-                await _fileManagerService.UploadAsync(s3Key, item.Content);
+                await _fileManagerService.UploadAsync(fileKey, item.Content);
             }
             catch (Exception ex)
             {
-                LogErro($"{metodo}.s3Upload", ex);
+                LogErro($"{metodo}.fileUpload", ex);
             }
-            CriarDiagrama(diagramas, item, s3Key);
+            CriarDiagrama(diagramas, item, fileKey);
         }
 
         await _analiseRepository.AdicionarAsync(analise, cancellationToken);
@@ -92,8 +86,8 @@ public class CriarAnaliseHandler : HandlerBase<CriarAnaliseHandler>, IRequestHan
         return resultado;
     }
 
-    private static void CriarDiagrama(List<Diagrama> diagramas, FileData item, string s3Key)
+    private static void CriarDiagrama(List<Diagrama> diagramas, FileData item, string fileKey)
     {
-        diagramas.Add(new Diagrama(s3Key, item.FileName, item.ContentType));
+        diagramas.Add(new Diagrama(fileKey, item.FileName, item.ContentType));
     }
 }

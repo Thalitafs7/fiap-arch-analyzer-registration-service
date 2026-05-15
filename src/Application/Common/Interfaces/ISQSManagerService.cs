@@ -1,7 +1,6 @@
 namespace Application.Common.Interfaces;
 
-
-public interface ISQSManagerService : ISQSMessageService
+public interface ISQSManagerService
 {
-    public Task Send(string message);
+    Task Send(string message);
 }

@@ -1,5 +1,6 @@
 using Domain.Entities.Base;
 using Domain.Exceptions;
+using System.Text.Json;
 
 namespace Domain.Entities;
 
@@ -22,7 +23,10 @@ public class Relatorio : Entity
         Guid idDiagrama,
         List<string> componentes_Identificado,
         List<string> risco_Arquitetura,
-        List<string> recomendacao)
+        List<string> recomendacao,
+        string? errorMessage = null,
+        string? errorStep = null,
+        string? errorType = null)
     {
         if (string.IsNullOrWhiteSpace(nome))
             throw new DomainException("Nome do relatório é obrigatório.");
@@ -36,5 +40,15 @@ public class Relatorio : Entity
         Componentes_Identificado = componentes_Identificado ?? new List<string>();
         Risco_Arquitetura = risco_Arquitetura ?? new List<string>();
         Recomendacao = recomendacao ?? new List<string>();
+
+        if (errorMessage is not null || errorStep is not null || errorType is not null)
+        {
+            Message_Error = JsonSerializer.Serialize(new
+            {
+                message = errorMessage,
+                step = errorStep,
+                type = errorType,
+            });
+        }
     }
 }

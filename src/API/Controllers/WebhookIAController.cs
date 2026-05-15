@@ -35,6 +35,8 @@ public class WebhookIAController : ControllerBase
             request.Status,
             request.Report,
             request.ErrorMessage,
+            request.ErrorStep,
+            request.ErrorType,
             request.CompletedAt);
 
         var result = await _mediator.Send(command, cancellationToken);
