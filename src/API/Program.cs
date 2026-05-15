@@ -37,6 +37,11 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<ExceptionFilter>();
+})
+.AddJsonOptions(options =>
+{
+    // Deserialização case-insensitive para receber JSON snake_case do processing-service
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
 });
 
 builder.Services.AddEndpointsApiExplorer();

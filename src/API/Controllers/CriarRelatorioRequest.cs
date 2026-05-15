@@ -3,13 +3,23 @@ using System.Text.Json.Serialization;
 
 namespace API.Controllers;
 
-
 public record CriarRelatorioRequest
 {
+    [JsonPropertyName("analysis_id")]
     public required Guid AnalysisId { get; init; }
-    public required Guid Soat_analysis_id { get; init; }
+
+    [JsonPropertyName("soat_analysis_id")]
+    public Guid? Soat_analysis_id { get; init; }
+
+    [JsonPropertyName("status")]
     public string? Status { get; init; }
+
+    [JsonPropertyName("report")]
     public ReportDetail? Report { get; init; }
+
+    [JsonPropertyName("error_message")]
     public string? ErrorMessage { get; init; }
+
+    [JsonPropertyName("completed_at")]
     public DateTimeOffset? CompletedAt { get; init; }
 }

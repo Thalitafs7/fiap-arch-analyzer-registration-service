@@ -22,13 +22,23 @@ public class WebhookIAController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// Recebe o resultado da análise do processing-service via JSON (webhook callback).
+    /// </summary>
     [HttpPost("report/callback")]
     [AllowAnonymous]
-    public async Task<IActionResult> Criar([FromForm] CriarRelatorioRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> Criar([FromBody] CriarRelatorioRequest request, CancellationToken cancellationToken)
     {
-        var command = new CriarRelatorioCommand(request.AnalysisId, request.Soat_analysis_id, request.Status, request.Report, request.ErrorMessage, request.CompletedAt);
+        var command = new CriarRelatorioCommand(
+            request.AnalysisId,
+            request.Soat_analysis_id ?? Guid.Empty,
+            request.Status,
+            request.Report,
+            request.ErrorMessage,
+            request.CompletedAt);
+
         var result = await _mediator.Send(command, cancellationToken);
-        _logger.LogInformation("Relatório atualizado com sucesso", result.Id, result.Nome);
+        _logger.LogInformation("Relatório salvo. Id={Id}", result.Id);
         return Ok(result);
     }
 
@@ -44,11 +54,25 @@ public class WebhookIAController : ControllerBase
         return Ok(result);
     }
 
+    /// <summary>
+    /// Atualiza status via body — rota usada pelo processing-service (soat_client).
+    /// PUT /api/webhooks/analyses/{hash}/status  body: {"status": "em_processamento"}
+    /// </summary>
+    [HttpPut("analyses/{hash}/status")]
+    [AllowAnonymous]
+    public async Task<IActionResult> AtualizarStatus(Guid hash, CancellationToken cancellationToken)
+    {
+        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash), cancellationToken);
+        _logger.LogInformation("Status atualizado. Id={Id}", result?.Id);
+        return Ok(result);
+    }
+
+    /// <summary>Rota legada — mantida para compatibilidade.</summary>
     [HttpPut("analysis/{hash}/status_processing")]
+    [AllowAnonymous]
     public async Task<IActionResult> Update(Guid hash, CancellationToken cancellationToken)
     {
         var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash), cancellationToken);
-        _logger.LogInformation("Analise atualizada com sucesso", result.Id, result.Nome);
         return Ok(result);
     }
 }

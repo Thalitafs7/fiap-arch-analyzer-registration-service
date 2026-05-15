@@ -23,6 +23,8 @@
     <PackageReference Include="Hangfire.PostgreSql" Version="1.20.9" />
     
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.400.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">

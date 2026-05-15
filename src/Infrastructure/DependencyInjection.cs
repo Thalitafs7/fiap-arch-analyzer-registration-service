@@ -4,11 +4,13 @@ using Domain.Interfaces;
 using Infrastructure.ExternalServices;
 using Infrastructure.Http;
 using Infrastructure.Logging;
+using Infrastructure.Messaging;
 using Infrastructure.Persistence;
 using Infrastructure.Persistence.Repositories;
 using Infrastructure.Security;
 using Infrastructure.Services;
 using Infrastructure.Services.MessageSQS;
+using Infrastructure.Settings;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -65,11 +67,14 @@ public static class DependencyInjection
 
         services.AddTransient<CorrelationIdHttpMessageHandler>();
 
-        var sqsQueueUrl = configuration["AWS:SQS:QueueUrl"] ?? throw new InvalidOperationException("AWS:SQS:QueueUrl not configured.");
+        var sqsQueueUrl = configuration["AWS:SQS:QueueUrl"] ?? "";
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         services.AddScoped<IFileManagerService>(sp => new FileManagerService(sp.GetRequiredService<Amazon.S3.IAmazonS3>(), configuration));
-        services.AddScoped<ISQSMessageService>(services => new SQSMessageService(services.GetService<IAmazonSQS>(), sqsQueueUrl));
-        services.AddScoped<ISQSManagerService>(services => new SQSManagerService(services.GetService<IAmazonSQS>(), sqsQueueUrl));
+        services.AddScoped<ISQSMessageService>(sp => new SQSMessageService(sp.GetRequiredService<IAmazonSQS>(), sqsQueueUrl));
+        services.AddScoped<ISQSManagerService>(sp => new SQSManagerService(sp.GetRequiredService<IAmazonSQS>(), sqsQueueUrl));
+
+        services.AddScoped<IRabbitMQDiagramPublisher, RabbitMQDiagramPublisher>();
+        services.AddScoped<IRegistrationSettings, RegistrationSettings>();
 
         services.AddScoped<ICorrelationIdService, CorrelationIdService>();
         services.AddScoped(typeof(ILogService<>), typeof(LogService<>));
