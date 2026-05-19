@@ -76,4 +76,12 @@ public class AnaliseRepository : IAnaliseRepository
     {
         return await _context.Set<Analise>().FindAsync(new object[] { id }, cancellationToken);
     }
+
+    public async Task<Analise?> ObterPorSoatAnalysisIdAsync(Guid soatAnalysisId, CancellationToken cancellationToken = default)
+    {
+        return await _context.Set<Analise>()
+            .Include(a => a.Diagramas)
+                .ThenInclude(d => d.Relatorio)
+            .FirstOrDefaultAsync(a => a.SoatAnalysisId == soatAnalysisId, cancellationToken);
+    }
 }

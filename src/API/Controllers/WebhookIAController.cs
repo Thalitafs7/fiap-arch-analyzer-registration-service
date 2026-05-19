@@ -1,5 +1,6 @@
 using Application.Commands.CriarRelatorio;
 using Application.Commands.AtualizarStatusAnalise;
+using Application.Commands.AtualizarStatusPorSoatId;
 using Application.Queries.ObterAnaliseServicoPorId;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -58,23 +59,36 @@ public class WebhookIAController : ControllerBase
 
     /// <summary>
     /// Atualiza status via body — rota usada pelo processing-service (soat_client).
-    /// PUT /api/webhooks/analyses/{hash}/status  body: {"status": "em_processamento"}
+    /// PUT /api/webhooks/analyses/{hash}/status  body: {"status": "em_processamento", "soat_analysis_id": "..."}
     /// </summary>
     [HttpPut("analyses/{hash}/status")]
     [AllowAnonymous]
-    public async Task<IActionResult> AtualizarStatus(Guid hash, CancellationToken cancellationToken)
+    public async Task<IActionResult> AtualizarStatus(Guid hash, [FromBody] AtualizarStatusRequest? request, CancellationToken cancellationToken)
     {
-        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash), cancellationToken);
+        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId), cancellationToken);
         _logger.LogInformation("Status atualizado. Id={Id}", result?.Id);
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Atualiza o status da análise usando o IADT (soat_analysis_id = ID da análise no processing-service).
+    /// PUT /api/webhooks/analyses/soat/{soatAnalysisId}/status  body: {"status": "analisado"}
+    /// </summary>
+    [HttpPut("analyses/soat/{soatAnalysisId}/status")]
+    [AllowAnonymous]
+    public async Task<IActionResult> AtualizarStatusPorSoatId(Guid soatAnalysisId, [FromBody] AtualizarStatusRequest request, CancellationToken cancellationToken)
+    {
+        var result = await _mediator.Send(new AtualizarStatusPorSoatIdCommand(soatAnalysisId, request.Status ?? string.Empty), cancellationToken);
+        _logger.LogInformation("Status atualizado via soat_analysis_id. Id={Id}", result?.Id);
         return Ok(result);
     }
 
     /// <summary>Rota legada — mantida para compatibilidade.</summary>
     [HttpPut("analysis/{hash}/status_processing")]
     [AllowAnonymous]
-    public async Task<IActionResult> Update(Guid hash, CancellationToken cancellationToken)
+    public async Task<IActionResult> Update(Guid hash, [FromBody] AtualizarStatusRequest? request, CancellationToken cancellationToken)
     {
-        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash), cancellationToken);
+        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId), cancellationToken);
         return Ok(result);
     }
 }

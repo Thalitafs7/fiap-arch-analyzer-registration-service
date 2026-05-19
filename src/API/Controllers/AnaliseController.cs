@@ -1,5 +1,6 @@
 using Application.Commands.CriarAnalise;
 using Application.Commands.DeletarAnalise;
+using Application.Commands.RefreshStatusAnalise;
 using Application.Commands.UpdateAnalise;
 using Application.Common.Models;
 using Application.Queries.ObterAnaliseAllServico;
@@ -87,6 +88,22 @@ public class AnaliseController : ControllerBase
         if (result is null)
             return NotFound(new { message = "Analise n�o encontrada." });
 
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Consulta o processing-service e sincroniza o status da análise.
+    /// Útil quando o webhook de atualização falhou ou o status ficou desatualizado.
+    /// </summary>
+    [HttpPost("{id:guid}/refresh-status")]
+    public async Task<IActionResult> RefreshStatus(Guid id, CancellationToken cancellationToken)
+    {
+        var result = await _mediator.Send(new RefreshStatusAnaliseCommand(id), cancellationToken);
+
+        if (result is null)
+            return NotFound(new { message = "Analise não encontrada." });
+
+        _logger.LogInformation("Status da análise {Id} sincronizado: {Status}", id, result.Status);
         return Ok(result);
     }
 }

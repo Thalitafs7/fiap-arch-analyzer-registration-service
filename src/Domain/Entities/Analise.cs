@@ -9,6 +9,7 @@ public class Analise : Entity
     public Guid ClienteId { get; private set; }
     public string Nome { get; private set; } = default!;
     public StatusAnalise Status { get; private set; }
+    public Guid? SoatAnalysisId { get; private set; }
     public string Descricao { get; private set; } = string.Empty;
     public List<Diagrama> Diagramas { get; private set; } = new();
 
@@ -46,6 +47,12 @@ public class Analise : Entity
     public void AtualizarStatus(StatusAnalise status)
     {
         Status = status;
+        AtualizarDataModificacao();
+    }
+
+    public void AtualizarSoatAnalysisId(Guid soatAnalysisId)
+    {
+        SoatAnalysisId = soatAnalysisId;
         AtualizarDataModificacao();
     }
 

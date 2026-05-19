@@ -64,6 +64,14 @@ public static class DependencyInjection
         services.AddScoped<IRabbitMQDiagramPublisher, RabbitMQDiagramPublisher>();
         services.AddScoped<IRegistrationSettings, RegistrationSettings>();
 
+        var processingBaseUrl = configuration["Services:Processing:BaseUrl"]
+            ?? "http://processing-service:8000";
+        services.AddHttpClient<IProcessingServiceClient, ProcessingServiceClient>(client =>
+        {
+            client.BaseAddress = new Uri(processingBaseUrl);
+            client.Timeout = TimeSpan.FromSeconds(10);
+        });
+
         services.AddScoped<ICorrelationIdService, CorrelationIdService>();
         services.AddScoped(typeof(ILogService<>), typeof(LogService<>));
 

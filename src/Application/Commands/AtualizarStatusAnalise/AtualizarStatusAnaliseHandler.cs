@@ -35,6 +35,9 @@ public class AtualizarStatusAnaliseHandler : HandlerBase<AtualizarStatusAnaliseH
 
             analise.AtualizarStatus(Domain.Enums.StatusAnalise.EmProcessamento);
 
+            if (command.SoatAnalysisId.HasValue && command.SoatAnalysisId.Value != Guid.Empty)
+                analise.AtualizarSoatAnalysisId(command.SoatAnalysisId.Value);
+
             _analiseRepository.Atualizar(analise);
 
             await CommitAsync(cancellationToken);
