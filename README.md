@@ -254,3 +254,200 @@ Quando executado junto com outros microsserviços do ecossistema, é necessário
 ```bash
 docker network create mecanicaos-shared
 ```
+
+---
+
+## Diagramas de Arquitetura (Mermaid)
+
+### Visão Macro — Comunicação entre Serviços
+
+```mermaid
+graph LR
+    subgraph "External Clients"
+        CLIENT[Client / API Gateway]
+    end
+
+    subgraph "Registration Service"
+        API["ASP.NET Core API :5002"]
+        APP[Application Layer]
+        DOMAIN[Domain Layer]
+        INFRA[Infrastructure Layer]
+    end
+
+    subgraph "Infrastructure"
+        PG[(PostgreSQL)]
+        RMQ[[RabbitMQ]]
+        FS[Local File Storage]
+    end
+
+    subgraph "External Services"
+        PROC["Processing Service :8000"]
+    end
+
+    CLIENT -->|REST + JWT| API
+    API --> APP
+    APP --> DOMAIN
+    APP --> INFRA
+    INFRA -->|EF Core| PG
+    INFRA -->|Publish diagram.uploaded| RMQ
+    INFRA -->|Upload files| FS
+    INFRA -->|HTTP GET status| PROC
+    RMQ -->|Consume| PROC
+    PROC -->|Webhook callback| API
+```
+
+### Fluxo Principal — Criação de Análise até Relatório
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant API as Registration API
+    participant H as CriarAnaliseHandler
+    participant FS as File Storage
+    participant DB as PostgreSQL
+    participant RMQ as RabbitMQ
+    participant PS as Processing Service
+    participant WH as Webhook Controller
+
+    C->>API: POST /api/analise (file + metadata)
+    API->>H: CriarAnaliseCommand
+    H->>FS: Upload file
+    H->>DB: Insert Analise + Diagrama
+    H->>RMQ: Publish diagram.uploaded
+    RMQ-->>PS: Consume message
+    PS->>WH: PUT /api/webhooks/analyses/{id}/status
+    Note over WH: Status → EmProcessamento
+    WH->>DB: Update Analise.Status
+    PS->>PS: Analyze diagram
+    PS->>WH: POST /api/webhooks/report/callback
+    WH->>DB: Insert Relatorio
+    WH->>DB: Update Analise.Status → Analisado
+    WH-->>PS: 200 OK
+```
+
+### Arquitetura Interna — Clean Architecture + CQRS
+
+```mermaid
+graph TD
+    subgraph "API Layer"
+        AC[AnaliseController]
+        RC[RelatorioController]
+        WC[WebhookIAController]
+        MID[CorrelationIdMiddleware]
+        FLT[ExceptionFilter]
+    end
+
+    subgraph "Application Layer"
+        CMD["Commands: CriarAnalise, UpdateAnalise, DeletarAnalise, AtualizarStatus, CriarRelatorio, RefreshStatus"]
+        QRY["Queries: ObterAnalise, ObterRelatorio"]
+        BHV["Behaviors: Validation, Logging, ExceptionHandling"]
+        INTF["Interfaces: IRepository, IRabbitMQPublisher, IProcessingClient, IFileManager"]
+    end
+
+    subgraph "Domain Layer"
+        ENT["Entities: Analise, Diagrama, Relatorio, Error"]
+        ENUM["Enums: StatusAnalise"]
+        EXC[DomainException]
+    end
+
+    subgraph "Infrastructure Layer"
+        REPO["Repositories: Analise, Diagrama, Relatorio, Error"]
+        DBCTX[OrdensDbContext]
+        RMQP[RabbitMQDiagramPublisher]
+        HTTP[ProcessingServiceClient]
+        FILE[LocalFileManagerService]
+        UOW[UnitOfWork]
+    end
+
+    AC --> CMD
+    AC --> QRY
+    RC --> QRY
+    WC --> CMD
+    CMD --> BHV
+    CMD --> INTF
+    QRY --> INTF
+    INTF -.->|implemented by| REPO
+    INTF -.->|implemented by| RMQP
+    INTF -.->|implemented by| HTTP
+    INTF -.->|implemented by| FILE
+    REPO --> DBCTX
+    DBCTX -->|EF Core| ENT
+    CMD --> ENT
+    ENT --> ENUM
+    ENT --> EXC
+```
+
+### Máquina de Estados — Ciclo de Vida da Análise
+
+```mermaid
+stateDiagram-v2
+    [*] --> Recebido: POST /api/analise
+    Recebido --> EmProcessamento: Webhook status update
+    EmProcessamento --> Analisado: Report callback received
+    EmProcessamento --> Error: Processing failed
+    Recebido --> Error: Processing failed
+    Analisado --> [*]
+    Error --> [*]
+```
+
+### Topologia de Mensageria — RabbitMQ
+
+```mermaid
+graph LR
+    subgraph "Registration Service"
+        PUB[RabbitMQDiagramPublisher]
+    end
+
+    subgraph "RabbitMQ"
+        EX["Exchange: reports.events (topic)"]
+    end
+
+    subgraph "Processing Service"
+        CON[Consumer]
+    end
+
+    PUB -->|routing key: diagram.uploaded| EX
+    EX -->|binding| CON
+```
+
+### Topologia de Deploy
+
+```mermaid
+graph TD
+    subgraph "Docker Compose"
+        API["ms-ordens-api :5002"]
+        PG["PostgreSQL 16 Alpine :5434"]
+    end
+
+    subgraph "External Network"
+        RMQ["RabbitMQ :5672"]
+        PROC["Processing Service :8000"]
+    end
+
+    subgraph "CI/CD"
+        GHA[GitHub Actions]
+        TF[Terraform]
+        AWS[AWS]
+    end
+
+    API -->|EF Core + retry| PG
+    API -->|AMQP publish| RMQ
+    API -->|HTTP client| PROC
+    PROC -->|Webhook HTTP| API
+    GHA -->|cd-main| TF
+    TF -->|deploy| AWS
+```
+
+### Pipeline de Request — MediatR Behaviors
+
+```mermaid
+flowchart TD
+    REQ[Incoming Request] --> VAL[ValidationBehavior]
+    VAL -->|Invalid| ERR400[400 Bad Request]
+    VAL -->|Valid| LOG[LoggingBehavior]
+    LOG --> EXH[ExceptionHandlingBehavior]
+    EXH --> HANDLER[Command/Query Handler]
+    HANDLER -->|Success| RES[Response]
+    HANDLER -->|Exception| EXH
+    EXH -->|Caught| ERR500[Error Response]
+```
