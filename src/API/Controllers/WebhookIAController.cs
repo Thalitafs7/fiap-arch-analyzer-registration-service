@@ -65,7 +65,7 @@ public class WebhookIAController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> AtualizarStatus(Guid hash, [FromBody] AtualizarStatusRequest? request, CancellationToken cancellationToken)
     {
-        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId), cancellationToken);
+        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId, request?.Status), cancellationToken);
         _logger.LogInformation("Status atualizado. Id={Id}", result?.Id);
         return Ok(result);
     }
@@ -88,7 +88,7 @@ public class WebhookIAController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> Update(Guid hash, [FromBody] AtualizarStatusRequest? request, CancellationToken cancellationToken)
     {
-        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId), cancellationToken);
+        var result = await _mediator.Send(new AtualizarStatusAnaliseCommand(hash, request?.SoatAnalysisId, request?.Status), cancellationToken);
         return Ok(result);
     }
 }

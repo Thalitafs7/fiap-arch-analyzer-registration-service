@@ -21,7 +21,7 @@ public static class StatusAnaliseExtensions
             "PROCESSING" or "EMPROCESSAMENTO" or "EM_PROCESSAMENTO" => StatusAnalise.EmProcessamento,
             "ANALYZED" or "ANALISADO" => StatusAnalise.Analisado,
             "ERROR" or "ERRO" => StatusAnalise.Error,
-            _ => StatusAnalise.Error
+            _ => throw new ArgumentException($"Status externo não reconhecido: '{status}'. Valores aceitos: recebido, em_processamento, analisado, erro.")
         };
     }
 }

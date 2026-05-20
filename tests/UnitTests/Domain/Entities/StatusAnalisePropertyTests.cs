@@ -17,7 +17,8 @@ public class StatusAnalisePropertyTests
 
     private static readonly HashSet<string> KnownStatuses = new(StringComparer.OrdinalIgnoreCase)
     {
-        "RECEIVED", "PROCESSING", "ANALYZED", "ERROR"
+        "RECEIVED", "RECEBIDO", "PROCESSING", "EMPROCESSAMENTO", "EM_PROCESSAMENTO",
+        "ANALYZED", "ANALISADO", "ERROR", "ERRO"
     };
 
     /// <summary>
@@ -50,10 +51,10 @@ public class StatusAnalisePropertyTests
 
     /// <summary>
     /// **Validates: Requirements 6.2**
-    /// For any string NOT in {"RECEIVED","PROCESSING","ANALYZED","ERROR"} → returns StatusAnalise.Error.
+    /// For any string NOT in known statuses → throws ArgumentException.
     /// </summary>
     [Property(MaxTest = 100)]
-    public Property FromExternalStatus_UnknownString_ReturnsError()
+    public Property FromExternalStatus_UnknownString_ThrowsArgumentException()
     {
         var unknownStringArb = Arb.Generate<NonEmptyString>()
             .Select(s => s.Get)
@@ -64,8 +65,15 @@ public class StatusAnalisePropertyTests
             unknownStringArb,
             (string unknownStatus) =>
             {
-                var result = StatusAnaliseExtensions.FromExternalStatus(unknownStatus);
-                return result == StatusAnalise.Error;
+                try
+                {
+                    StatusAnaliseExtensions.FromExternalStatus(unknownStatus);
+                    return false; // Should have thrown
+                }
+                catch (ArgumentException)
+                {
+                    return true;
+                }
             });
     }
 

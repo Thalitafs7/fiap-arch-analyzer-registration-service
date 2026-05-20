@@ -3,4 +3,4 @@ using MediatR;
 
 namespace Application.Commands.AtualizarStatusAnalise;
 
-public record AtualizarStatusAnaliseCommand(Guid Id, Guid? SoatAnalysisId) : IRequest<AnaliseDto>;
+public record AtualizarStatusAnaliseCommand(Guid Id, Guid? SoatAnalysisId, string? Status = null) : IRequest<AnaliseDto>;

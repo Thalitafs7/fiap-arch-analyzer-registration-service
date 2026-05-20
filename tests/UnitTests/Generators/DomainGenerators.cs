@@ -84,7 +84,7 @@ public static class DomainGenerators
 
     public static Arbitrary<AtualizarStatusAnaliseCommand> ValidAtualizarStatusCommand() =>
         (from id in Arb.Generate<Guid>().Where(g => g != Guid.Empty)
-         select new AtualizarStatusAnaliseCommand(id))
+         select new AtualizarStatusAnaliseCommand(id, null, "em_processamento"))
         .ToArbitrary();
 
     // --- Exceptions ---
