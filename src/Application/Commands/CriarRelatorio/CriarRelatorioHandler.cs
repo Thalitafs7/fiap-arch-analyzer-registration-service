@@ -34,19 +34,39 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 
         LogInicio(metodo, command);
 
-        var analise = await _analiseRepository.ObterPorIdAsync(command.AnalysisId);
-        var diagrama = await _diagramaRepository.ObterPorAnaliseAsync(analise.Id);
+        // soat_analysis_id é o ID da analise neste serviço (passado pelo processing-service de volta)
+        var analiseId = command.soat_analysis_id != Guid.Empty
+            ? command.soat_analysis_id
+            : command.AnalysisId;
 
-        if (diagrama == null) { throw new Exception("Diagrama não existe"); }
+        var analise = await _analiseRepository.ObterPorIdAsync(analiseId)
+            ?? throw new Exception($"Analise não encontrada: {analiseId}");
 
-        var relatorio = new Relatorio(command.Report.ExecutiveSummary, command.
-            soat_analysis_id, diagrama.Id, command.Report.ComponentsIdentified, command.Report.ArchitecturalRisks,
-            command.Report.Recommendations);
+        var diagrama = await _diagramaRepository.ObterPorAnaliseAsync(analise.Id)
+            ?? throw new Exception("Diagrama não existe para a analise.");
+
+        var risks = command.Report?.ArchitecturalRisks?
+            .Select(r => r.ToString())
+            .ToList() ?? new List<string>();
+
+        var nome = string.IsNullOrWhiteSpace(command.Report?.ExecutiveSummary)
+            ? "Relatório gerado"
+            : command.Report.ExecutiveSummary;
+
+        // AnalysisId = ID interno do processing-service (armazenado para referência cruzada)
+        var relatorio = new Relatorio(
+            nome,
+            command.AnalysisId,
+            diagrama.Id,
+            command.Report?.ComponentsIdentified ?? new List<string>(),
+            risks,
+            command.Report?.Recommendations ?? new List<string>(),
+            errorMessage: command.ErrorMessage,
+            errorStep: command.ErrorStep,
+            errorType: command.ErrorType);
 
         await _relatorioRepository.AdicionarAsync(relatorio, cancellationToken);
-
         await AtualizarStatusAnalise(analise, command.Status ?? string.Empty, cancellationToken);
-
         await CommitAsync(cancellationToken);
 
         var resultado = relatorio.ToDto();
@@ -62,8 +82,5 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
         _analiseRepository.Atualizar(analise);
     }
 
-    public static StatusAnalise MapStatus(string? status)
-    {
-        return StatusAnaliseExtensions.FromExternalStatus(status);
-    }
+    public static StatusAnalise MapStatus(string? status) => StatusAnaliseExtensions.FromExternalStatus(status);
 }

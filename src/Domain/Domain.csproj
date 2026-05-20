@@ -7,10 +7,6 @@
     <RootNamespace>Domain</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AWSSDK.S3" Version="4.0.21.2" />
-  </ItemGroup>
-
   <!-- Domain Layer: ZERO external dependencies - pure business logic -->
 
 </Project>

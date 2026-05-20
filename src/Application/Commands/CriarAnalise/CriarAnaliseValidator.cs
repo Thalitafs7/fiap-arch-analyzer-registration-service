@@ -15,8 +15,7 @@ public class CriarAnaliseValidator : AbstractValidator<CriarAnaliseCommand>
 
         RuleFor(x => x.Nome)
             .NotEmpty()
-            .WithMessage("Nome da analise é obrigatório");
-        
+            .WithMessage("Nome da analise é obrigatório");        
 
         RuleFor(x => x.Descricao)
             .MaximumLength(1000)

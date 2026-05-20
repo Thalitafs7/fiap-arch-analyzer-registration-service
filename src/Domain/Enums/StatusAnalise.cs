@@ -17,10 +17,10 @@ public static class StatusAnaliseExtensions
 
         return status.Trim().ToUpperInvariant() switch
         {
-            "RECEIVED" => StatusAnalise.Recebido,
-            "PROCESSING" => StatusAnalise.EmProcessamento,
-            "ANALYZED" => StatusAnalise.Analisado,
-            "ERROR" => StatusAnalise.Error,
+            "RECEIVED" or "RECEBIDO" => StatusAnalise.Recebido,
+            "PROCESSING" or "EMPROCESSAMENTO" or "EM_PROCESSAMENTO" => StatusAnalise.EmProcessamento,
+            "ANALYZED" or "ANALISADO" => StatusAnalise.Analisado,
+            "ERROR" or "ERRO" => StatusAnalise.Error,
             _ => StatusAnalise.Error
         };
     }

@@ -15,7 +15,8 @@ public class AnaliseConfiguration : IEntityTypeConfiguration<Analise>
         builder.HasKey(e => e.Id);
         builder.Property(e => e.Id).HasColumnName("id");
         builder.Property(e => e.Nome).HasColumnName("nome");
-        builder.Property(e => e.Status).HasColumnName("status");
+        builder.Property(e => e.Status).HasColumnName("status").HasConversion<string>();
+        builder.Property(e => e.SoatAnalysisId).HasColumnName("soat_analysis_id");
         builder.Property(e => e.Descricao).HasColumnName("descricao");
         builder.Property(e => e.Ativo).HasColumnName("ativo");
         builder.Property(e => e.DataCadastro).HasColumnName("data_cadastro");

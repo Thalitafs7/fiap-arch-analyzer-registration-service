@@ -10,8 +10,9 @@ public static class AnaliseServicoMappings
         return new AnaliseDto(
             an.ClienteId,
             an.Id,
-            an.Nome,                        
+            an.Nome,
             an.Status.ToString(),
+            an.SoatAnalysisId,
             an.Descricao,
             an.Diagramas.Select(d => d.ToDto()).ToList(),
             an.DataCadastro
