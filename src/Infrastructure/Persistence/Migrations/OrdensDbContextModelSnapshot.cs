@@ -54,13 +54,8 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("text")
                         .HasColumnName("nome");
 
-                    b.Property<Guid?>("SoatAnalysisId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("soat_analysis_id");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text")
+                    b.Property<int>("Status")
+                        .HasColumnType("integer")
                         .HasColumnName("status");
 
                     b.HasKey("Id");

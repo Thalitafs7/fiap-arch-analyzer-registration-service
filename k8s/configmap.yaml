@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: registration-config
+  namespace: arch-analyzer-api
+  labels:
+    app.kubernetes.io/name: registration
+    app.kubernetes.io/part-of: arch-analyzer
+    app.kubernetes.io/component: api
+data:
+  # Runtime environment — non-sensitive app config only.
+  # AWS values (DB_ADDRESS, DB_PORT, SQS_*, S3_*, ECR_*, etc.)
+  # are consumed via envFrom: configMapRef: infra-outputs in the Deployment.
+  # Secrets (connection string, JWT key) come from secretRef: registration-secret.
+
+  ASPNETCORE_ENVIRONMENT: "Production"
+
+  # Logging
+  Logging__LogLevel__Default: "Information"
+  Logging__LogLevel__Microsoft.AspNetCore: "Warning"
+  Logging__LogLevel__Microsoft.EntityFrameworkCore: "Warning"
+
+  # Feature flags
+  Features__EnableEmailNotifications: "false"
+  Features__EnableDiagramUpload: "true"
