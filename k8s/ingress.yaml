@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: registration-ingress
+  namespace: arch-analyzer-api
+  labels:
+    app.kubernetes.io/name: registration
+    app.kubernetes.io/part-of: arch-analyzer
+    app.kubernetes.io/component: api
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      proxy_set_header X-Forwarded-Prefix /api/registration;
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /api/registration(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: registration-service
+                port:
+                  number: 5002
