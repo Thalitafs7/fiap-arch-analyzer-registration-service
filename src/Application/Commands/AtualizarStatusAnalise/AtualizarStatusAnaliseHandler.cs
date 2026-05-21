@@ -2,6 +2,7 @@ using Application.Common.Handlers;
 using Application.Common.Interfaces;
 using Application.DTOs;
 using Application.Mappings;
+using Domain.Enums;
 using Domain.Interfaces;
 using MediatR;
 
@@ -33,7 +34,11 @@ public class AtualizarStatusAnaliseHandler : HandlerBase<AtualizarStatusAnaliseH
             if (analise is null)
                 throw new Exception("Analise não existe");
 
-            analise.AtualizarStatus(Domain.Enums.StatusAnalise.EmProcessamento);
+            var novoStatus = string.IsNullOrWhiteSpace(command.Status)
+                ? StatusAnalise.EmProcessamento
+                : SafeFromExternalStatus(command.Status);
+
+            analise.AtualizarStatus(novoStatus);
 
             if (command.SoatAnalysisId.HasValue && command.SoatAnalysisId.Value != Guid.Empty)
                 analise.AtualizarSoatAnalysisId(command.SoatAnalysisId.Value);
@@ -51,6 +56,19 @@ public class AtualizarStatusAnaliseHandler : HandlerBase<AtualizarStatusAnaliseH
         {
             LogErro(metodo, ex);
             throw;
+        }
+    }
+
+    private StatusAnalise SafeFromExternalStatus(string status)
+    {
+        try
+        {
+            return StatusAnaliseExtensions.FromExternalStatus(status);
+        }
+        catch (ArgumentException ex)
+        {
+            LogErro(nameof(SafeFromExternalStatus), ex);
+            return StatusAnalise.Error;
         }
     }
 }
