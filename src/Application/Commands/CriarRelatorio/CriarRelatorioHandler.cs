@@ -78,7 +78,18 @@ public class CriarRelatorioHandler : HandlerBase<CriarRelatorioHandler>, IReques
 
     private async Task AtualizarStatusAnalise(Analise? analise, string status, CancellationToken cancellationToken)
     {
-        analise!.AtualizarStatus(StatusAnaliseExtensions.FromExternalStatus(status));
+        StatusAnalise novoStatus;
+        try
+        {
+            novoStatus = StatusAnaliseExtensions.FromExternalStatus(status);
+        }
+        catch (ArgumentException ex)
+        {
+            LogErro(nameof(AtualizarStatusAnalise), ex);
+            novoStatus = StatusAnalise.Error;
+        }
+
+        analise!.AtualizarStatus(novoStatus);
         _analiseRepository.Atualizar(analise);
     }
 

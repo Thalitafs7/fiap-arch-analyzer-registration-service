@@ -32,7 +32,7 @@ public class AtualizarStatusPorSoatIdHandler : HandlerBase<AtualizarStatusPorSoa
             var analise = await _analiseRepository.ObterPorSoatAnalysisIdAsync(command.SoatAnalysisId, cancellationToken)
                 ?? throw new Exception($"Analise não encontrada para soat_analysis_id: {command.SoatAnalysisId}");
 
-            analise.AtualizarStatus(StatusAnaliseExtensions.FromExternalStatus(command.Status));
+            analise.AtualizarStatus(SafeFromExternalStatus(command.Status));
 
             _analiseRepository.Atualizar(analise);
             await CommitAsync(cancellationToken);
@@ -46,6 +46,19 @@ public class AtualizarStatusPorSoatIdHandler : HandlerBase<AtualizarStatusPorSoa
         {
             LogErro(metodo, ex);
             throw;
+        }
+    }
+
+    private StatusAnalise SafeFromExternalStatus(string status)
+    {
+        try
+        {
+            return StatusAnaliseExtensions.FromExternalStatus(status);
+        }
+        catch (ArgumentException ex)
+        {
+            LogErro(nameof(SafeFromExternalStatus), ex);
+            return StatusAnalise.Error;
         }
     }
 }

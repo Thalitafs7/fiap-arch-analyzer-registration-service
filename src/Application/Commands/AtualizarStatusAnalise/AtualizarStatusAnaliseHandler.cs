@@ -36,7 +36,7 @@ public class AtualizarStatusAnaliseHandler : HandlerBase<AtualizarStatusAnaliseH
 
             var novoStatus = string.IsNullOrWhiteSpace(command.Status)
                 ? StatusAnalise.EmProcessamento
-                : StatusAnaliseExtensions.FromExternalStatus(command.Status);
+                : SafeFromExternalStatus(command.Status);
 
             analise.AtualizarStatus(novoStatus);
 
@@ -56,6 +56,19 @@ public class AtualizarStatusAnaliseHandler : HandlerBase<AtualizarStatusAnaliseH
         {
             LogErro(metodo, ex);
             throw;
+        }
+    }
+
+    private StatusAnalise SafeFromExternalStatus(string status)
+    {
+        try
+        {
+            return StatusAnaliseExtensions.FromExternalStatus(status);
+        }
+        catch (ArgumentException ex)
+        {
+            LogErro(nameof(SafeFromExternalStatus), ex);
+            return StatusAnalise.Error;
         }
     }
 }
